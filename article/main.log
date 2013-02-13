@@ -1,0 +1,651 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.23)  13 FEB 2013 19:59
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 366.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip44
+\LTright=\skip45
+\LTpre=\skip46
+\LTpost=\skip47
+\LTchunksize=\count91
+\LTcapwidth=\dimen117
+\LT@head=\box27
+\LT@firsthead=\box28
+\LT@foot=\box29
+\LT@lastfoot=\box30
+\LT@cols=\count92
+\LT@rows=\count93
+\c@LT@tables=\count94
+\c@LT@chunks=\count95
+\LT@p@ftn=\toks15
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks16
+\float@box=\box31
+\@float@everytoks=\toks17
+\@floatcapt=\box32
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen118
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen119
+\subfiglabelskip=\skip51
+\c@subfigure=\count97
+\c@lofdepth=\count98
+\c@subtable=\count99
+\c@lotdepth=\count100
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/10/15 v6.83k Hypertext links for LaTeX
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen120
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/10/15 v6.83k Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count103
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4322.
+Package hyperref Info: Link nesting OFF on input line 4327.
+Package hyperref Info: Hyper index ON on input line 4330.
+Package hyperref Info: Plain pages OFF on input line 4337.
+Package hyperref Info: Backreferencing OFF on input line 4342.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4567.
+\c@Hy@tempcnt=\count104
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4920.
+\XeTeXLinkMargin=\dimen121
+\Fld@menulength=\count105
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
+Package hyperref Info: Hyper figures OFF on input line 6174.
+Package hyperref Info: Link nesting OFF on input line 6179.
+Package hyperref Info: Hyper index ON on input line 6182.
+Package hyperref Info: backreferencing OFF on input line 6189.
+Package hyperref Info: Link coloring OFF on input line 6194.
+Package hyperref Info: Link coloring with OCG OFF on input line 6199.
+Package hyperref Info: PDF/A mode OFF on input line 6204.
+LaTeX Info: Redefining \ref on input line 6244.
+LaTeX Info: Redefining \pageref on input line 6248.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/10/15 v6.83k Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip54
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip55
+\plpartopsep=\skip56
+\plitemsep=\skip57
+\plparsep=\skip58
+\pl@lab=\toks20
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count111
+))
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks21
+\extratabsurround=\skip59
+\backup@length=\skip60
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/eqparbox/eqparbox.sty
+Package: eqparbox 2010/01/01 v3.1 Create equal-widthed boxes
+\eqp@tempdima=\skip61
+\eqp@tempdimb=\skip62
+)
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 430.
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/07/31 v2.42 Cross-referencing by name of section
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count112
+)
+LaTeX Info: Redefining \ref on input line 430.
+LaTeX Info: Redefining \pageref on input line 430.
+LaTeX Info: Redefining \nameref on input line 430.
+
+(./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen128
+\scratchbox=\box34
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen129
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 542.
+
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 542.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 542.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 542.
+
+** ATTENTION: \keywords is deprecated (line 542). Use \IEEEkeywords instead.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 542.
+LaTeX Font Info:    Try loading font information for U+msa on input line 542.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 542.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+pzd on input line 542.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+** ATTENTION: \keywords is deprecated (line 542). Use \IEEEkeywords instead.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 568.
+LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 568.
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 652.
+
+[2] [3]
+Underfull \hbox (badness 1859) in paragraph at lines 696--697
+[]\OT1/ppl/m/n/10 Software de-vel-op-ment strat-egy: the over-all ap-
+ []
+
+<figures/completemethodology2.png, id=332, 1507.5522pt x 1138.0116pt>
+File: figures/completemethodology2.png Graphic file (type png)
+
+<use figures/completemethodology2.png>
+Package pdftex.def Info: figures/completemethodology2.png used on input line 70
+9.
+(pdftex.def)             Requested size: 289.07999pt x 218.22139pt.
+ [4]
+Underfull \hbox (badness 2495) in paragraph at lines 743--744
+[]\OT1/ppl/m/n/10 A com-plete overview of the over-all case study
+ []
+
+[5 <./figures/completemethodology2.png>] [6]
+Underfull \vbox (badness 4328) has occurred while \output is active []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 846--847
+[]\OT1/ppl/m/it/10 Action/interaction strate-gies\OT1/ppl/m/n/10 , the ac-tions
+ and re-
+ []
+
+[7] <figures/high-level.png, id=431, 1174.1466pt x 722.4591pt>
+File: figures/high-level.png Graphic file (type png)
+
+<use figures/high-level.png>
+Package pdftex.def Info: figures/high-level.png used on input line 872.
+(pdftex.def)             Requested size: 289.07999pt x 177.8694pt.
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [9 <./figures/high-level.png>]
+
+LaTeX Warning: Reference `EvProt' on page 10 undefined on input line 922.
+
+[10] [11]
+
+LaTeX Warning: Reference `AgilePlan' on page 12 undefined on input line 985.
+
+
+LaTeX Warning: Reference `UML' on page 12 undefined on input line 989.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+\OT1/ppl/m/n/10 and adopt-ing par-tial and rapid evo-lu-tion-ary
+ []
+
+
+Underfull \hbox (badness 7116) in paragraph at lines 1029--1030
+\OT1/ppl/m/n/10 and highly co-located de-vel-op-ers. Through these
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 1029--1030
+\OT1/ppl/m/n/10 un-cer-tain con-di-tions and se-vere lack of re-sources.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+
+ []
+
+[13]
+
+LaTeX Warning: Reference `sect:res:gt:meth-compare' on page 14 undefined on inp
+ut line 1055.
+
+
+LaTeX Warning: Reference `sect:theory:debt' on page 14 undefined on input line 
+1059.
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 1059--1060
+\OT1/ppl/m/n/10 (project man-age-ment, re-quire-ment spec-i-fi-ca-tions,
+ []
+
+[14]
+
+LaTeX Warning: Reference `a:related:grey' on page 15 undefined on input line 10
+61.
+
+
+Underfull \hbox (badness 6741) in paragraph at lines 1063--1064
+[]\OT1/ppl/m/n/10 Engineering ac-tiv-i-ties are sup-ported by low-
+ []
+
+[15]
+
+LaTeX Warning: Reference `sect:theory:team' on page 16 undefined on input line 
+1100.
+
+[16]
+
+LaTeX Warning: Reference `sect:theory:theory' on page 17 undefined on input lin
+e 1109.
+
+
+LaTeX Warning: Reference `sect:theory:team' on page 17 undefined on input line 
+1120.
+
+[17]
+Underfull \hbox (badness 1533) in paragraph at lines 1150--1151
+\OT1/ppl/m/n/10 in 1986 by Brooks [[]], dis-cussed what chal-lenges
+ []
+
+[18]
+
+LaTeX Warning: Reference `fig:an:comp:high-level2' on page 19 undefined on inpu
+t line 1192.
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+[21] (./main.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+
+Underfull \hbox (badness 1694) in paragraph at lines 71--73
+[]\OT1/ppl/m/n/8 N. Pa-ter-nos-ter, ``Evo-lu-tion-ary anal-y-sis of soft-ware d
+e-vel-op-
+ []
+
+[22]
+Underfull \hbox (badness 1460) in paragraph at lines 330--332
+\OT1/ppl/m/n/8 line]. Avail-able: []$http : / / www . sei . cmu . edu / communi
+ty / td2012/$[]
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 350--353
+[]\OT1/ppl/m/n/8 V. R. Basili, ``Soft-ware mod-el-ing and mea-sure-ment: the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+\OT1/ppl/m/n/8 Avail-able: []$https : / / github . com / adv0r / BTH-[]Intervie
+w-[]Package$[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
+[]\OT1/ppl/m/n/8 The In-ven-tors of Six Sigma. [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
+[]$\OT1/ppl/m/n/8 http : / / web . archive . org / web / 20051106025733 / http 
+: / / www .
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 457--460
+\OT1/ppl/m/n/8 motorola . com / content / 0 ,[] ,[]3079 ,[] 00 . html$[] (Ac-ce
+ssed : Aug. 25,
+ []
+
+[23])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1500.
+ [24
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1500.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1500.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1500.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 369C946CB206E7FA540A8D55509C2803;2165.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1500.
+ ) 
+Here is how much of TeX's memory you used:
+ 7004 strings out of 493488
+ 105225 string characters out of 3141325
+ 195263 words of memory out of 3000000
+ 10031 multiletter control sequences out of 15000+200000
+ 56213 words of font info for 123 fonts, out of 3000000 for 9000
+ 960 hyphenation exceptions out of 8191
+ 30i,8n,28p,2659b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw
+/palatino/uplri8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/zapfd
+ing/uzdr.pfb>
+Output written on main.pdf (24 pages, 1464455 bytes).
+PDF statistics:
+ 692 PDF objects out of 1000 (max. 8388607)
+ 646 compressed objects within 7 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+
