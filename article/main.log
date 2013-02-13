@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.23)  13 FEB 2013 19:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.23)  13 FEB 2013 20:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -429,13 +429,13 @@ Underfull \hbox (badness 1859) in paragraph at lines 696--697
 []\OT1/ppl/m/n/10 Software de-vel-op-ment strat-egy: the over-all ap-
  []
 
-<figures/completemethodology2.png, id=332, 1507.5522pt x 1138.0116pt>
+<figures/completemethodology2.png, id=332, 1507.5522pt x 893.2572pt>
 File: figures/completemethodology2.png Graphic file (type png)
 
 <use figures/completemethodology2.png>
 Package pdftex.def Info: figures/completemethodology2.png used on input line 70
 9.
-(pdftex.def)             Requested size: 289.07999pt x 218.22139pt.
+(pdftex.def)             Requested size: 289.07999pt x 171.28807pt.
  [4]
 Underfull \hbox (badness 2495) in paragraph at lines 743--744
 []\OT1/ppl/m/n/10 A com-plete overview of the over-all case study
@@ -456,24 +456,10 @@ File: figures/high-level.png Graphic file (type png)
 <use figures/high-level.png>
 Package pdftex.def Info: figures/high-level.png used on input line 872.
 (pdftex.def)             Requested size: 289.07999pt x 177.8694pt.
-
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
  [8]
 Underfull \vbox (badness 1622) has occurred while \output is active []
 
- [9 <./figures/high-level.png>]
-
-LaTeX Warning: Reference `EvProt' on page 10 undefined on input line 922.
-
-[10] [11]
-
-LaTeX Warning: Reference `AgilePlan' on page 12 undefined on input line 985.
-
-
-LaTeX Warning: Reference `UML' on page 12 undefined on input line 989.
-
-[12]
+ [9 <./figures/high-level.png>] [10] [11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
 
  []
@@ -499,58 +485,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
  []
 
 [13]
-
-LaTeX Warning: Reference `sect:res:gt:meth-compare' on page 14 undefined on inp
-ut line 1055.
-
-
-LaTeX Warning: Reference `sect:theory:debt' on page 14 undefined on input line 
-1059.
-
-
 Underfull \hbox (badness 1655) in paragraph at lines 1059--1060
 \OT1/ppl/m/n/10 (project man-age-ment, re-quire-ment spec-i-fi-ca-tions,
  []
 
 [14]
-
-LaTeX Warning: Reference `a:related:grey' on page 15 undefined on input line 10
-61.
-
-
 Underfull \hbox (badness 6741) in paragraph at lines 1063--1064
 []\OT1/ppl/m/n/10 Engineering ac-tiv-i-ties are sup-ported by low-
  []
 
-[15]
-
-LaTeX Warning: Reference `sect:theory:team' on page 16 undefined on input line 
-1100.
-
-[16]
-
-LaTeX Warning: Reference `sect:theory:theory' on page 17 undefined on input lin
-e 1109.
-
-
-LaTeX Warning: Reference `sect:theory:team' on page 17 undefined on input line 
-1120.
-
-[17]
+[15] [16]
 Underfull \hbox (badness 1533) in paragraph at lines 1150--1151
 \OT1/ppl/m/n/10 in 1986 by Brooks [[]], dis-cussed what chal-lenges
  []
 
-[18]
-
-LaTeX Warning: Reference `fig:an:comp:high-level2' on page 19 undefined on inpu
-t line 1192.
-
-[19]
+[17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
-[21] (./main.bbl
+ [18]
+[19] [20] [21] (./main.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -563,47 +516,52 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-
-Underfull \hbox (badness 1694) in paragraph at lines 71--73
-[]\OT1/ppl/m/n/8 N. Pa-ter-nos-ter, ``Evo-lu-tion-ary anal-y-sis of soft-ware d
-e-vel-op-
- []
-
 [22]
-Underfull \hbox (badness 1460) in paragraph at lines 330--332
-\OT1/ppl/m/n/8 line]. Avail-able: []$http : / / www . sei . cmu . edu / communi
-ty / td2012/$[]
+Underfull \hbox (badness 1859) in paragraph at lines 326--328
+[]\OT1/ppl/m/n/8 W. Cun-ning-ham. The WyCash Port-fo-lio Man-age-ment Sys-
  []
 
 
-Underfull \hbox (badness 7030) in paragraph at lines 350--353
+Underfull \hbox (badness 4872) in paragraph at lines 350--353
 []\OT1/ppl/m/n/8 V. R. Basili, ``Soft-ware mod-el-ing and mea-sure-ment: the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--408
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
+[]\OT1/ppl/m/n/8 Startup types dis-tri-bu-tion. [On-line]. Avail-able: []$http 
+:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
+\OT1/ppl/m/n/8 / / techcrunch . com / 2012 / 02 / 17 / crunchbase/$[] (Ac-cesse
+d :
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 406--408
 \OT1/ppl/m/n/8 Avail-able: []$https : / / github . com / adv0r / BTH-[]Intervie
 w-[]Package$[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--460
+Underfull \hbox (badness 10000) in paragraph at lines 471--474
 []\OT1/ppl/m/n/8 The In-ven-tors of Six Sigma. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--460
+Underfull \hbox (badness 10000) in paragraph at lines 471--474
 []$\OT1/ppl/m/n/8 http : / / web . archive . org / web / 20051106025733 / http 
 : / / www .
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 457--460
+Underfull \hbox (badness 2698) in paragraph at lines 471--474
 \OT1/ppl/m/n/8 motorola . com / content / 0 ,[] ,[]3079 ,[] 00 . html$[] (Ac-ce
 ssed : Aug. 25,
  []
 
-[23])
+) [23]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1500.
  [24
 
@@ -617,21 +575,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 369C946CB206E7FA540A8D55509C2803;2165.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1500.
  ) 
 Here is how much of TeX's memory you used:
- 7004 strings out of 493488
- 105225 string characters out of 3141325
- 195263 words of memory out of 3000000
- 10031 multiletter control sequences out of 15000+200000
- 56213 words of font info for 123 fonts, out of 3000000 for 9000
+ 6998 strings out of 493488
+ 105105 string characters out of 3141325
+ 194352 words of memory out of 3000000
+ 10025 multiletter control sequences out of 15000+200000
+ 55604 words of font info for 122 fonts, out of 3000000 for 9000
  960 hyphenation exceptions out of 8191
- 30i,8n,28p,2659b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,8n,28p,2489b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
@@ -642,10 +597,10 @@ onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/zapfd
 ing/uzdr.pfb>
-Output written on main.pdf (24 pages, 1464455 bytes).
+Output written on main.pdf (24 pages, 1340480 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 646 compressed objects within 7 object streams
- 187 named destinations out of 1000 (max. 500000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 188 named destinations out of 1000 (max. 500000)
  275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
