@@ -68,8 +68,9 @@ T.~W. Archibald, L.~C. Thomas, and E.~Possani, ``{Keep or return? Managing
   {2007}.
 
 \bibitem{SMS}
-N.~Paternoster, ``Evolutionary analysis of software development in startup
-  companies,'' Master's thesis, Free University of Bolzano, 2012.
+N.~Paternoster, C.~Giardino, M.~Unterkalmsteiner, T.~Gorschek, and
+  P.~Abrahamsson, ``Software development in startup companies: A systematic
+  mapping study,'' \emph{Information and Software Technology}, 2013.
 
 \bibitem{Nugroho2011}
 A.~Nugroho, J.~Visser, and T.~Kuipers, ``An empirical model of technical debt
@@ -484,6 +485,87 @@ R.~Baskerville, B.~Ramesh, L.~Levine, J.~Pries-Heje, and S.~Slaughter, ``Is
 \bibitem{BrooksJr1987}
 F.~{Brooks Jr}, ``{No Silver Bullet --- Essence and Accidents of Software
   Engineering},'' \emph{Computer}, vol.~20, no.~4, pp. 10--19, 1987.
+
+\bibitem{Wood2005}
+D.~Wood, ``{Open Source Software Strategies for Venture-Funded Startups},''
+  MIND Laboratory, University of Maryland, Tech. Rep. TR-MS1287, 2005.
+
+\bibitem{Stanfill2007}
+R.~Stanfill and T.~Astleford, ``{Improving Entrepreneurship Team Performance
+  through Market Feasibility Analysis, Early Identification of Technical
+  Requirements, and Intellectual Property Support},'' in \emph{American Society
+  for Engineering Education Annual Conference}, 2007.
+
+\bibitem{Su-Chan2007}
+S.-C. Li, ``The role of value proposition and value co-production in new
+  internet startups: How new venture e-businesses achieve competitive
+  advantage,'' in \emph{Management of Engineering and Technology, Portland
+  International Center for}, Aug. 2007, pp. 1126 --1132.
+
+\bibitem{Steenhuis2008}
+H.-J. Steenhuis and E.~de~Bruijn, ``Innovation and technology based economic
+  development: Are there short-cuts?'' in \emph{Management of Innovation and
+  Technology, 2008. ICMIT 2008. 4th IEEE International Conference on}, Sept.
+  2008, pp. 837 --841.
+
+\bibitem{Lai2010}
+S.-l. Lai, ``{Chinese Entrepreneurship in the Internet Age : Lessons from
+  Alibaba.com},'' \emph{World Academy of Science, Engineering and Technology},
+  vol.~72, pp. 405--411, 2010.
+
+\bibitem{Hasel2010}
+M.~H\"{a}sel, N.~Breugst, and T.~Kollmann, ``{IT Competence in Internet Founder
+  Teams An Analysis of Preferences and Product Innovativity},'' \emph{Business
+  \& Information System Engineering}, vol.~52, no.~4, pp. 210--217, 2010.
+
+\bibitem{Cooper1986}
+R.~Cooper, ``{An Investigation into the New Product Process : Steps,
+  Deficiencies, and Impact},'' \emph{Journal of product innovation management},
+  vol.~3, no.~2, pp. 71--85, 1986.
+
+\bibitem{peopleware-demarco1999}
+T.~DeMarco, \emph{Peopleware: Productive Projects and Teams (Second
+  Edition)}.\hskip 1em plus 0.5em minus 0.4em\relax Dorset House; 2nd edition,
+  1999.
+
+\bibitem{Coleman2004}
+G.~Coleman, ``{eXtreme Programming (XP) as a "Minimum" Software Process : A
+  grounded theory},'' in \emph{Proceedings of the 28th Annual International
+  Computer Software and Applications Conference}, 2004, pp. 4--5.
+
+\bibitem{Valtanen2008}
+A.~Valtanen, ``{Big Improvements with Small Changes : Improving the Processes
+  of a Small Software Company},'' \emph{Product-Focused Software Process
+  Improvement}, no. 2006, pp. 258--272, 2008.
+
+\bibitem{Adolph2011}
+S.~Adolph and P.~Kruchten, ``{Reconciling Perspectives: How People Manage the
+  Process of Software Development},'' in \emph{AGILE Conference}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, Aug. 2011, pp. 48--56.
+
+\bibitem{people-first-order}
+A.~Cockburn, ``Characterizing people as non-linear, first-order components in
+  software development.'' Multi-Conference on Systems, Cybernetics and
+  Informatics, Orlando, Florida, Tech. Rep., 1999.
+
+\bibitem{Cugola98softwareprocesses:}
+G.~Cugola and C.~Ghezzi, ``Software processes: a retrospective and a path to
+  the future,'' \emph{Software Process: Improvement and Practice}, vol.~4,
+  no.~3, pp. 101--123, 1998.
+
+\bibitem{Deshpande2001}
+Y.~Deshpande and S.~Hansen, ``{Web engineering: creating a discipline among
+  disciplines},'' \emph{IEEE Multimedia}, vol.~8, no.~2, pp. 82--87, 2001.
+
+\bibitem{Bass2003}
+L.~Bass, P.~Clements, and R.~Kazman, \emph{Software architecture in
+  practice}.\hskip 1em plus 0.5em minus 0.4em\relax Boston, MA, USA:
+  Addison-Wesley Longman Publishing Co., Inc., 1998.
+
+\bibitem{Ullah2011}
+A.~M.~M. Sharif~Ullah and J.~Tamaki, ``Analysis of kano-model-based customer
+  needs for product development,'' \emph{Journal of System Engineering},
+  vol.~14, no.~2, pp. 154--172, Jun. 2011.
 
 \bibitem{Eisenhardt2007}
 K.~M. Eisenhardt and K.~M. Eisenhardt, ``{Building Theories from Case Study

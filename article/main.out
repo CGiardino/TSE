@@ -1,8 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Lack of research in startups}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Definition of startup}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Evolution of the process}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.1}{General lack of research in startups}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Software development in startups}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Software process improvement in startups}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{Technical debt}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Research methodology}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Design and execution}{section.3}% 8
@@ -22,12 +22,13 @@
 \BOOKMARK [1][-]{section.5}{Theory implications}{}% 22
 \BOOKMARK [1][-]{section.6}{Discussion}{}% 23
 \BOOKMARK [2][-]{subsection.6.1}{Comparison with other frameworks}{section.6}% 24
-\BOOKMARK [2][-]{subsection.6.2}{High-level relations validity}{section.6}% 25
-\BOOKMARK [2][-]{subsection.6.3}{Engineering elements and categories}{section.6}% 26
-\BOOKMARK [1][-]{section.7}{Validity threats}{}% 27
-\BOOKMARK [2][-]{subsection.7.1}{Future work}{section.7}% 28
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 29
-\BOOKMARK [1][-]{section*.2}{References}{}% 30
-\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 31
-\BOOKMARK [2][-]{IEEEbiography.1}{John Doe}{IEEEbiography.0}% 32
-\BOOKMARK [2][-]{IEEEbiography.2}{Jane Doe}{IEEEbiography.0}% 33
+\BOOKMARK [2][-]{subsection.6.2}{Theoretical categories and existing literature}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.3}{Confounding factors from the literature}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.4}{High-level relations validity}{section.6}% 27
+\BOOKMARK [1][-]{section.7}{Validity threats}{}% 28
+\BOOKMARK [2][-]{subsection.7.1}{Future work}{section.7}% 29
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 30
+\BOOKMARK [1][-]{section*.2}{References}{}% 31
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 32
+\BOOKMARK [2][-]{IEEEbiography.1}{John Doe}{IEEEbiography.0}% 33
+\BOOKMARK [2][-]{IEEEbiography.2}{Jane Doe}{IEEEbiography.0}% 34
