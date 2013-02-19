@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.23)  14 FEB 2013 14:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.23)  15 FEB 2013 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -424,7 +424,9 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 652.
 
-[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
 Underfull \hbox (badness 4505) in paragraph at lines 662--663
 []\OT1/ppl/m/n/10 First in-sights re-veal how soft-ware star-tups are
  []
@@ -434,7 +436,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 696--697
 []\OT1/ppl/m/n/10 Software de-vel-op-ment strat-egy: the over-all ap-
  []
 
-<figures/completemethodology2.png, id=336, 1507.5522pt x 893.2572pt>
+<figures/completemethodology2.png, id=338, 1507.5522pt x 893.2572pt>
 File: figures/completemethodology2.png Graphic file (type png)
 
 <use figures/completemethodology2.png>
@@ -442,7 +444,7 @@ Package pdftex.def Info: figures/completemethodology2.png used on input line 70
 9.
 (pdftex.def)             Requested size: 289.07999pt x 171.28807pt.
  [4]
-Underfull \hbox (badness 2495) in paragraph at lines 743--744
+Underfull \hbox (badness 2495) in paragraph at lines 741--742
 []\OT1/ppl/m/n/10 A com-plete overview of the over-all case study
  []
 
@@ -450,80 +452,73 @@ Underfull \hbox (badness 2495) in paragraph at lines 743--744
 Underfull \vbox (badness 4328) has occurred while \output is active []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 846--847
+Underfull \hbox (badness 3884) in paragraph at lines 844--845
 []\OT1/ppl/m/it/10 Action/interaction strate-gies\OT1/ppl/m/n/10 , the ac-tions
  and re-
  []
 
-[7] <figures/high-level.png, id=435, 1174.1466pt x 722.4591pt>
+[7] <figures/high-level.png, id=442, 1174.1466pt x 722.4591pt>
 File: figures/high-level.png Graphic file (type png)
 
 <use figures/high-level.png>
-Package pdftex.def Info: figures/high-level.png used on input line 872.
+Package pdftex.def Info: figures/high-level.png used on input line 870.
 (pdftex.def)             Requested size: 289.07999pt x 177.8694pt.
  [8]
 Underfull \vbox (badness 1622) has occurred while \output is active []
 
- [9 <./figures/high-level.png>] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
+ [9 <./figures/high-level.png>] [10] [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1026
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
 \OT1/ppl/m/n/10 and adopt-ing par-tial and rapid evo-lu-tion-ary
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 1029--1030
+Underfull \hbox (badness 7116) in paragraph at lines 1027--1028
 \OT1/ppl/m/n/10 and highly co-located de-vel-op-ers. Through these
  []
 
 
-Underfull \hbox (badness 2653) in paragraph at lines 1029--1030
+Underfull \hbox (badness 2653) in paragraph at lines 1027--1028
 \OT1/ppl/m/n/10 un-cer-tain con-di-tions and se-vere lack of re-sources.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
 
  []
 
-[13]
-Underfull \hbox (badness 1655) in paragraph at lines 1059--1060
-\OT1/ppl/m/n/10 (project man-age-ment, re-quire-ment spec-i-fi-ca-tions,
- []
-
-[14]
-Underfull \hbox (badness 6741) in paragraph at lines 1063--1064
-[]\OT1/ppl/m/n/10 Engineering ac-tiv-i-ties are sup-ported by low-
- []
-
-[15] [16]
-Underfull \hbox (badness 1533) in paragraph at lines 1149--1150
+[13] [14]
+Underfull \hbox (badness 1533) in paragraph at lines 1118--1119
 \OT1/ppl/m/n/10 in 1986 by Brooks [[]], dis-cussed what chal-lenges
  []
 
-[17] [18]
+[15] [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-[20]
+ [17]
+[18] [19] [20]
+Underfull \hbox (badness 1655) in paragraph at lines 1325--1326
+\OT1/ppl/m/n/10 (project man-age-ment, re-quire-ment spec-i-fi-ca-tions,
+ []
 
-LaTeX Warning: Reference `fig:an:comp:cof:inn' on page 21 undefined on input li
-ne 1265.
+[21]
+Underfull \hbox (badness 6741) in paragraph at lines 1329--1330
+[]\OT1/ppl/m/n/10 Engineering ac-tiv-i-ties are sup-ported by low-
+ []
 
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1359
+[][][][]\OT1/ppl/m/n/8 Available at []$https : / / github . com / adv0r /
+ []
 
-LaTeX Warning: Reference `sect:theory:detailed' on page 21 undefined on input l
-ine 1280.
-
-[21] [22] [23] [24] (./main.bbl
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
+[24] (./main.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
@@ -531,76 +526,79 @@ ine 1280.
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
 [25]
-Underfull \hbox (badness 1859) in paragraph at lines 327--329
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+[26]
+Underfull \hbox (badness 1859) in paragraph at lines 335--337
 []\OT1/ppl/m/n/8 W. Cun-ning-ham. The WyCash Port-fo-lio Man-age-ment Sys-
  []
 
-[26]
-Underfull \hbox (badness 4872) in paragraph at lines 351--354
+
+Underfull \hbox (badness 4872) in paragraph at lines 359--362
 []\OT1/ppl/m/n/8 V. R. Basili, ``Soft-ware mod-el-ing and mea-sure-ment: the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--389
+Underfull \hbox (badness 10000) in paragraph at lines 394--397
 []\OT1/ppl/m/n/8 Startup types dis-tri-bu-tion. [On-line]. Avail-able: []$http 
 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--389
+Underfull \hbox (badness 10000) in paragraph at lines 394--397
 \OT1/ppl/m/n/8 / / techcrunch . com / 2012 / 02 / 17 / crunchbase/$[] (Ac-cesse
 d :
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 407--409
+Underfull \hbox (badness 1769) in paragraph at lines 415--417
 \OT1/ppl/m/n/8 Avail-able: []$https : / / github . com / adv0r / BTH-[]Intervie
 w-[]Package$[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--475
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 []\OT1/ppl/m/n/8 The In-ven-tors of Six Sigma. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--475
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 []$\OT1/ppl/m/n/8 http : / / web . archive . org / web / 20051106025733 / http 
 : / / www .
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 472--475
+Underfull \hbox (badness 2698) in paragraph at lines 480--483
 \OT1/ppl/m/n/8 motorola . com / content / 0 ,[] ,[]3079 ,[] 00 . html$[] (Ac-ce
 ssed : Aug. 25,
  []
 
 [27])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1610.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1612.
  [28
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1610.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1612.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1610.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1610.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1612.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1612.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3BECF42CC0A2811A40BFE1772186027E;2300.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1610.
+(rerunfilecheck)             Checksum: 19C5BCAE544F5BAE3CD68F566C21AC60;2270.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1612.
  ) 
 Here is how much of TeX's memory you used:
- 7042 strings out of 493488
- 105787 string characters out of 3141325
- 215429 words of memory out of 3000000
- 10047 multiletter control sequences out of 15000+200000
+ 7043 strings out of 493488
+ 105777 string characters out of 3141325
+ 215621 words of memory out of 3000000
+ 10046 multiletter control sequences out of 15000+200000
  55604 words of font info for 122 fonts, out of 3000000 for 9000
  960 hyphenation exceptions out of 8191
- 30i,8n,28p,2489b,457s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,8n,28p,2489b,459s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
@@ -611,10 +609,10 @@ onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/zapfd
 ing/uzdr.pfb>
-Output written on main.pdf (28 pages, 1376119 bytes).
+Output written on main.pdf (28 pages, 1369562 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 763 compressed objects within 8 object streams
- 210 named destinations out of 1000 (max. 500000)
+ 824 PDF objects out of 1000 (max. 8388607)
+ 773 compressed objects within 8 object streams
+ 212 named destinations out of 1000 (max. 500000)
  283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

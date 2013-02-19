@@ -83,15 +83,15 @@ C.~Izurieta, A.~Vetr\`{o}, and N.~Zazworka, ``{Organizing the technical debt
   landscape},'' in \emph{Workshop on Managing Technical Debt (MTD), 2012 Third
   International}, 2012, pp. 23--26.
 
-\bibitem{storey1982entrepreneurship}
-D.~Storey, \emph{Entrepreneurship and the New Firm}.\hskip 1em plus 0.5em minus
-  0.4em\relax Croom Helm, 1982.
-
 \bibitem{Perkins:1999:IBI:555126}
 A.~B. Perkins and M.~C. Perkins, \emph{The Internet Bubble: Inside the
   Overvalued World of High-Tech Stocks -- And What You Need to Know to Avoid
   the Coming Catastrophe}.\hskip 1em plus 0.5em minus 0.4em\relax
   HarperInformation, 1999.
+
+\bibitem{storey1982entrepreneurship}
+D.~Storey, \emph{Entrepreneurship and the New Firm}.\hskip 1em plus 0.5em minus
+  0.4em\relax Croom Helm, 1982.
 
 \bibitem{Marmer2011}
 M.~Marmer, B.~L. Herrmann, E.~Dogrultan, R.~Berman, C.~Eesley, and S.~Blank,
@@ -323,6 +323,14 @@ L.~Bean and D.~D. Hott, ``{Wiki: A speedy new tool to manage projects},''
   \emph{Journal of Corporate Accounting \& Finance}, vol.~16, no.~5, pp. 3--8,
   Jul. 2005.
 
+\bibitem{Tom2013}
+\BIBentryALTinterwordspacing
+E.~Tom, A.~Aurum, and R.~Vidgen, ``An exploration of technical debt,''
+  \emph{Journal of Systems and Software}, no.~0, pp.~--, 2013. [Online].
+  Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0164121213000022}
+\BIBentrySTDinterwordspacing
+
 \bibitem{TechnicalDebtCunn}
 W. Cunningham. The WyCash Portfolio Management System. [Online]. Available:
   \url{http://c2.com/doc/oopsla92.html} (Accessed : Sep. 15, 2012).
@@ -441,6 +449,10 @@ R.~Pooley and P.~King, ``The unified modelling language and performance
   engineering,'' \emph{Software, IEE Proceedings -}, vol. 146, no.~1, pp. 2
   --10, feb 1999.
 
+\bibitem{Offutt2002}
+J.~Offutt, ``Quality attributes of web software applications,'' \emph{IEEE
+  Softw.}, vol.~19, no.~2, pp. 25--32, Mar. 2002.
+
 \bibitem{Rogers}
 E.~M. Rogers, \emph{Diffusion of Innovations}.\hskip 1em plus 0.5em minus
   0.4em\relax Free Press, 1995.
@@ -448,10 +460,6 @@ E.~M. Rogers, \emph{Diffusion of Innovations}.\hskip 1em plus 0.5em minus
 \bibitem{Christensen2003}
 C.~M. Christensen and M.~E. Raynor, \emph{{The Innovator's Solution}}.\hskip
   1em plus 0.5em minus 0.4em\relax Harvard Business School Press, 2003.
-
-\bibitem{Offutt2002}
-J.~Offutt, ``Quality attributes of web software applications,'' \emph{IEEE
-  Softw.}, vol.~19, no.~2, pp. 25--32, Mar. 2002.
 
 \bibitem{Highsmith2000}
 J.~A. Highsmith, \emph{{Adaptive Software Development: A Collaborative Approach
