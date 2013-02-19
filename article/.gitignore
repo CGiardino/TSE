@@ -3,3 +3,7 @@
 *.aux
 *.bbl
 *.blg
+Makefile
+*.make
+*.d
+*.fls
