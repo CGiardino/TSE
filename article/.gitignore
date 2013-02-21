@@ -7,3 +7,5 @@ Makefile
 *.make
 *.d
 *.fls
+*.temp
+*.gz
