@@ -1,187 +1,263 @@
-%% bare_jrnl_compsoc.tex %% V1.3 %% 2007/01/11 %% by Michael Shell %% See: %%
-http://www.michaelshell.org/ %% for current contact information. %% %% This is a
-skeleton file demonstrating the use of IEEEtran.cls %% (requires IEEEtran.cls
-version 1.7 or later) with an IEEE Computer %% Society journal paper. %% %%
-Support sites: %% http://www.michaelshell.org/tex/ieeetran/ %%
-http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/ %% and %%
-http://www.ieee.org/
+%% bare_jrnl_compsoc.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE Computer
+%% Society journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
 
-%%************************************************************************* %%
-Legal Notice: %% This code is offered as-is without any warranty either
-expressed or %% implied; without even the implied warranty of MERCHANTABILITY or
-%% FITNESS FOR A PARTICULAR PURPOSE!  %% User assumes all risk. %% In no event
-shall IEEE or any contributor to this code be liable for %% any damages or
-losses, including, but not limited to, incidental, %% consequential, or any
-other damages, resulting from the use or misuse %% of any information contained
-here. %% %% All comments are the opinions of their respective authors and are
-not %% necessarily endorsed by the IEEE. %% %% This work is distributed under
-the LaTeX Project Public License (LPPL) %% ( http://www.latex-project.org/ )
-version 1.3, and may be freely used, %% distributed and modified. A copy of the
-LPPL, version 1.3, is included %% in the base LaTeX documentation of all
-distributions of LaTeX released %% 2003/12/01 or later. %% Retain all
-contribution notices and credits. %% ** Modified files should be clearly
-indicated as such, including  ** %% ** renaming them and changing author support
-contact information. ** %% %% File list of work: IEEEtran.cls,
-IEEEtran_HOWTO.pdf, bare_adv.tex, %%                    bare_conf.tex,
-bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%% bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
 %%*************************************************************************
 
-% *** Authors should verify (and, if needed, correct) their LaTeX system  *** %
-*** with the testflow diagnostic prior to trusting their LaTeX platform *** %
-*** with production work. IEEE's font choices can trigger bugs that do  *** %
-*** not appear when using other class files.                            *** %
-The testflow support page is at: % http://www.michaelshell.org/tex/testflow/
+% *** Authors should verify (and, if needed, correct) their LaTeX system ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do ***
+% *** not appear when using other class files. ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
 
 
 
 
-% Note that the a4paper option is mainly intended so that authors in % countries
-using A4 can easily print to A4 and see how their papers will % look in print -
-the typesetting of the document will not typically be % affected with changes in
-paper size (but the bottom and side margins will). % Use the testflow package
-mentioned above to verify correct handling of % both paper sizes by the user's
-LaTeX system. % % Also note that the "draftcls" or "draftclsnofoot", not
-"draft", option % should be used if it is desired that the figures are to be
-displayed in % draft mode. % % The Computer Society usually requires 10pt for
-submissions. % \documentclass[10pt,journal,letterpaper,compsoc]{IEEEtran} % % If
-IEEEtran.cls has not been installed into the LaTeX system files, % manually
-specify the path to it like: %
-\documentclass[12pt,journal,compsoc]{../sty/IEEEtran}
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+% The Computer Society usually requires 10pt for submissions.
+%
+\documentclass[10pt,journal,letterpaper,compsoc]{IEEEtran}
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[12pt,journal,compsoc]{../sty/IEEEtran}
 
 
 
 
 
-% Some very useful LaTeX packages include: (uncomment the ones you want to load)
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
 
 
-% *** MISC UTILITY PACKAGES *** % %\usepackage{ifpdf} % Heiko Oberdiek's
-ifpdf.sty is very useful if you need conditional % compilation based on whether
-the output is pdf or dvi. % usage: % \ifpdf %   % pdf code % \else %   % dvi
-code % \fi % The latest version of ifpdf.sty can be obtained from: %
-http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/ % Also, note that
-IEEEtran.cls V1.7 and later provides a builtin % \ifCLASSINFOpdf conditional
-that works the same way. % When switching from latex to pdflatex and vice-versa,
-the compiler may % have to be run twice to clear warning/error messages.
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+% % pdf code
+% \else
+% % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
 
 
-%%extra packages ------  \usepackage{longtable}    \usepackage{float} %allows
-the use of [H] to force positioning of figures \usepackage{subfigure}
-\usepackage{hyperref} %used in references now  --- it shoud be removed
-\usepackage{amssymb} \usepackage[neveradjust]{paralist} %compact lists
+%%extra packages ------
+\usepackage{longtable}
+\usepackage{float} %allows the use of [H] to force positioning of figures
+\usepackage{subfigure}
+\usepackage{hyperref} %used in references now --- it shoud be removed
+\usepackage{amssymb}
+\usepackage[neveradjust]{paralist} %compact lists
 \usepackage{amsthm}
 
 \newtheorem*{theory}{Theory}
 
-% *** CITATION PACKAGES *** % \ifCLASSOPTIONcompsoc   % IEEE Computer Society
-needs nocompress option   % requires cite.sty v4.0 or later (November 2003)   %
-\usepackage[nocompress]{cite} \else   % normal IEEE   % \usepackage{cite} \fi %
-cite.sty was written by Donald Arseneau % V1.6 and later of IEEEtran pre-defines
-the format of the cite.sty package % \cite{} output to follow that of IEEE.
-Loading the cite package will % result in citation numbers being automatically
-sorted and properly % "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6]
-without using % cite.sty will become [1], [2], [5]--[7], [9] using cite.sty.
-cite.sty's % \cite will automatically add leading space, if needed. Use
-cite.sty's % noadjust option (cite.sty V3.8 and later) if you want to turn this
-off. % cite.sty is already installed on most LaTeX systems. Be sure and use %
-version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does % not
-currently provide for hyperlinked citations. % The latest version can be
-obtained at: % http://www.ctan.org/tex-archive/macros/latex/contrib/cite/ % The
-documentation is contained in the cite.sty file itself. % % Note that some
-packages require special options to format as the Computer % Society requires.
-In particular, Computer Society  papers do not use % compressed citation ranges
-as is done in typical IEEE papers % (e.g., [1]-[4]). Instead, they list every
-citation separately in order % (e.g., [1], [2], [3], [4]). To get the latter we
-need to load the cite % package with the nocompress option which is supported by
-cite.sty v4.0 % and later. Note also the use of a CLASSOPTION conditional
-provided by % IEEEtran.cls V1.7 and later.
+% *** CITATION PACKAGES ***
+%
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  % \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  % \usepackage{cite}
+\fi
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+%
+% Note that some packages require special options to format as the Computer
+% Society requires. In particular, Computer Society papers do not use
+% compressed citation ranges as is done in typical IEEE papers
+% (e.g., [1]-[4]). Instead, they list every citation separately in order
+% (e.g., [1], [2], [3], [4]). To get the latter we need to load the cite
+% package with the nocompress option which is supported by cite.sty v4.0
+% and later. Note also the use of a CLASSOPTION conditional provided by
+% IEEEtran.cls V1.7 and later.
 
 
 
 
 
-% *** GRAPHICS RELATED PACKAGES *** % %\ifCLASSINFOpdf
-\usepackage[pdftex]{graphicx}   % declare the path(s) where your graphic files
-are    \graphicspath{{figures}}   % and their extensions so you won't have to
-specify these with   % every instance of \includegraphics   %
-\DeclareGraphicsExtensions{.pdf,.jpeg,.png} %\else   % or other class option
-(dvipsone, dvipdf, if not using dvips). graphicx   % will default to the driver
-specified in the system graphics.cfg if no   % driver is specified. %
-\usepackage[dvips]{graphicx}   % declare the path(s) where your graphic files
-are    %\graphicspath{{./figures/}}   % and their extensions so you won't have
-to specify these with   % every instance of \includegraphics
-%\DeclareGraphicsExtensions{.eps} %\fi % graphicx was written by David Carlisle
-and Sebastian Rahtz. It is % required if you want graphics, photos, etc.
-graphicx.sty is already % installed on most LaTeX systems. The latest version
-and documentation can % be obtained at:  % http://www.ctan.org/tex-
-archive/macros/latex/required/graphics/ % Another good source of documentation
-is "Using Imported Graphics in % LaTeX2e" by Keith Reckdahl which can be found
-as epslatex.ps or % epslatex.pdf at: http://www.ctan.org/tex-archive/info/ % %
-latex, and pdflatex in dvi mode, support graphics in encapsulated % postscript
-(.eps) format. pdflatex in pdf mode supports graphics % in .pdf, .jpeg, .png and
-.mps (metapost) formats. Users should ensure % that all non-photo figures use a
-vector format (.eps, .pdf, .mps) and % not a bitmapped formats (.jpeg, .png).
-IEEE frowns on bitmapped formats % which can result in "jaggedy"/blurry
-rendering of lines and letters as % well as large increases in file sizes. % %
-You can find documentation about the pdfTeX application at: %
-http://www.tug.org/applications/pdftex
+% *** GRAPHICS RELATED PACKAGES ***
+%
+%\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+   \graphicspath{{figures}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+%\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+% \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+   %\graphicspath{{./figures/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+   %\DeclareGraphicsExtensions{.eps}
+%\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
 
 
 
 
 
-% *** MATH PACKAGES *** % %\usepackage[cmex10]{amsmath} % A popular package from
-the American Mathematical Society that provides % many useful and powerful
-commands for dealing with mathematics. If using % it, be sure to load this
-package with the cmex10 option to ensure that % only type 1 fonts will utilized
-at all point sizes. Without this option, % it is possible that some math
-symbols, particularly those within % footnotes, will be rendered in bitmap form
-which will result in a % document that can not be IEEE Xplore compliant! % %
-Also, note that the amsmath package sets \interdisplaylinepenalty to 10000 %
-thus preventing page breaks from occurring within multiline equations. Use:
-%\interdisplaylinepenalty=2500 % after loading amsmath to restore such page
-breaks as IEEEtran.cls normally % does. amsmath.sty is already installed on most
-LaTeX systems. The latest % version and documentation can be obtained at: %
-http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+% *** MATH PACKAGES ***
+%
+%\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
 
 
 
 
 
-% *** SPECIALIZED LIST PACKAGES *** % %\usepackage{algorithmic} %
-algorithmic.sty was written by Peter Williams and Rogerio Brito. % This package
-provides an algorithmic environment fo describing algorithms. % You can use the
-algorithmic environment in-text or within a figure % environment to provide for
-a floating algorithm. Do NOT use the algorithm % floating environment provided
-by algorithm.sty (by the same authors) or % algorithm2e.sty (by Christophe
-Fiorio) as IEEE does not use dedicated % algorithm float types and packages that
-provide these will not provide % correct IEEE style captions. The latest version
-and documentation of % algorithmic.sty can be obtained at: % http://www.ctan.org
-/tex-archive/macros/latex/contrib/algorithms/ % There is also a support site at:
-% http://algorithms.berlios.de/index.html % Also of interest may be the
-(relatively newer and more customizable) % algorithmicx.sty package by Szasz
-Janos: % http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
 
 
 
 
-% *** ALIGNMENT PACKAGES *** % \usepackage{array} % Frank Mittelbach's and David
-Carlisle's array.sty patches and improves % the standard LaTeX2e array and
-tabular environments to provide better % appearance and additional user
-controls. As the default LaTeX2e table % generation code is lacking to the point
-of almost being broken with % respect to the quality of the end results, all
-users are strongly % advised to use an enhanced (at the very least that provided
-by array.sty) % set of table tools. array.sty is already installed on most
-systems. The % latest version and documentation can be obtained at: %
-http://www.ctan.org/tex-archive/macros/latex/required/tools/
+% *** ALIGNMENT PACKAGES ***
+%
+\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
 
 
-%\usepackage{mdwmath} %\usepackage{mdwtab} % Also highly recommended is Mark
-Wooding's extremely powerful MDW tools, % especially mdwmath.sty and mdwtab.sty
-which are used to format equations % and tables, respectively. The MDWtools set
-is already installed on most % LaTeX systems. The lastest version and
-documentation is available at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/mdwtools/
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especially mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
 
 
 % IEEEtran contains the IEEEeqnarray family of commands that can be used to
@@ -189,221 +265,274 @@ archive/macros/latex/contrib/mdwtools/
 % quality.
 
 
-\usepackage{eqparbox} % Also of notable interest is Scott Pakin's eqparbox
-package for creating % (automatically sized) equal width boxes - aka "natural
-width parboxes". % Available at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/eqparbox/
+\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automatically sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
 
 
 
 
 
-% *** SUBFIGURE PACKAGES *** %\ifCLASSOPTIONcompsoc
-%\usepackage[tight,normalsize,sf,SF]{subfigure} %\else
-%\usepackage[tight,footnotesize]{subfigure} %\fi % subfigure.sty was written by
-Steven Douglas Cochran. This package makes it % easy to put subfigures in your
-figures. e.g., "Figure 1a and 1b". For IEEE % work, it is a good idea to load it
-with the tight package option to reduce % the amount of white space around the
-subfigures. Computer Society papers % use a larger font and \sffamily font for
-their captions, hence the % additional options needed under compsoc mode.
-subfigure.sty is already % installed on most LaTeX systems. The latest version
-and documentation can % be obtained at: % http://www.ctan.org/tex-
-archive/obsolete/macros/latex/contrib/subfigure/ % subfigure.sty has been
-superceeded by subfig.sty.
+% *** SUBFIGURE PACKAGES ***
+%\ifCLASSOPTIONcompsoc
+%\usepackage[tight,normalsize,sf,SF]{subfigure}
+%\else
+%\usepackage[tight,footnotesize]{subfigure}
+%\fi
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. Computer Society papers
+% use a larger font and \sffamily font for their captions, hence the
+% additional options needed under compsoc mode. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
 
 
-%\ifCLASSOPTIONcompsoc %  \usepackage[caption=false]{caption} %
-\usepackage[font=normalsize,labelfont=sf,textfont=sf]{subfig} %\else %
-\usepackage[caption=false]{caption} %  \usepackage[font=footnotesize]{subfig}
-%\fi % subfig.sty, also written by Steven Douglas Cochran, is the modern %
-replacement for subfigure.sty. However, subfig.sty requires and % automatically
-loads Axel Sommerfeldt's caption.sty which will override % IEEEtran.cls handling
-of captions and this will result in nonIEEE style % figure/table captions. To
-prevent this problem, be sure and preload % caption.sty with its "caption=false"
-package option. This is will preserve % IEEEtran.cls handing of captions.
-Version 1.3 (2005/06/28) and later  % (recommended due to many improvements over
-1.2) of subfig.sty supports % the caption=false option directly:
-%\ifCLASSOPTIONcompsoc %
-\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
-%\else %  \usepackage[caption=false,font=footnotesize]{subfig} %\fi % % The
-latest version and documentation can be obtained at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/subfig/ % The latest version and documentation of
-caption.sty can be obtained at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/caption/
-
-
-
-
-% *** FLOAT PACKAGES *** % %\usepackage{fixltx2e} % fixltx2e, the successor to
-the earlier fix2col.sty, was written by % Frank Mittelbach and David Carlisle.
-This package corrects a few problems % in the LaTeX2e kernel, the most notable
-of which is that in current % LaTeX2e releases, the ordering of single and
-double column floats is not % guaranteed to be preserved. Thus, an unpatched
-LaTeX2e can allow a % single column figure to be placed prior to an earlier
-double column % figure. The latest version and documentation can be found at: %
-http://www.ctan.org/tex-archive/macros/latex/base/
-
-
-
-%\usepackage{stfloats} % stfloats.sty was written by Sigitas Tolusis. This
-package gives LaTeX2e % the ability to do double column floats at the bottom of
-the page as well % as the top. (e.g., "\begin{figure*}[!b]" is not normally
-possible in % LaTeX2e). It also provides a command: %\fnbelowfloat % to enable
-the placement of footnotes below bottom floats (the standard % LaTeX2e kernel
-puts them above bottom floats). This is an invasive package % which rewrites
-many portions of the LaTeX2e float routines. It may not work % with other
-packages that modify the LaTeX2e float routines. The latest % version and
-documentation can be obtained at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/sttools/ % Documentation is contained in the
-stfloats.sty comments as well as in the % presfull.pdf file. Do not use the
-stfloats baselinefloat ability as IEEE % does not allow \baselineskip to
-stretch. Authors submitting work to the % IEEE should note that IEEE rarely uses
-double column equations and % that authors should try to avoid such use. Do not
-be tempted to use the % cuted.sty or midfloat.sty packages (also by Sigitas
-Tolusis) as IEEE does % not format its papers in such ways.
+%\ifCLASSOPTIONcompsoc
+% \usepackage[caption=false]{caption}
+% \usepackage[font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+% \usepackage[caption=false]{caption}
+% \usepackage[font=footnotesize]{subfig}
+%\fi
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\ifCLASSOPTIONcompsoc
+% \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+% \usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
 
 
 
 
-%\ifCLASSOPTIONcaptionsoff %  \usepackage[nomarkers]{endfloat} %
-\let\MYoriglatexcaption\caption %
-\renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}} %\fi %
-endfloat.sty was written by James Darrell McCauley and Jeff Goldberg. % This
-package may be useful when used in conjunction with IEEEtran.cls' % captionsoff
-option. Some IEEE journals/societies require that submissions % have lists of
-figures/tables at the end of the paper and that % figures/tables without any
-captions are placed on a page by themselves at % the end of the document. If
-needed, the draftcls IEEEtran class option or % \CLASSINPUTbaselinestretch
-interface can be used to increase the line % spacing as well. Be sure and use
-the nomarkers option of endfloat to % prevent endfloat from "marking" where the
-figures would have been placed % in the text. The two hack lines of code above
-are a slight modification of % that suggested by in the endfloat docs (section
-8.3.1) to ensure that % the full captions always appear in the list of
-figures/tables - even if % the user used the short optional argument of
-\caption[]{}. % IEEE papers do not typically make use of \caption[]'s optional
-argument, % so this should not be an issue. A similar trick can be used to
-disable % captions of packages such as subfig.sty that lack options to turn off
-% the subcaptions: % For subfig.sty: % \let\MYorigsubfloat\subfloat %
-\renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}} % For subfigure.sty:
-% \let\MYorigsubfigure\subfigure %
-\renewcommand{\subfigure}[2][\relax]{\MYorigsubfigure[]{#2}} % However, the
-above trick will not work if both optional arguments of % the \subfloat/subfig
-command are used. Furthermore, there needs to be a % description of each
-subfigure *somewhere* and endfloat does not add % subfigure captions to its list
-of figures. Thus, the best approach is to % avoid the use of subfigure captions
-(many IEEE journals avoid them anyway) % and instead reference/explain all the
-subfigures within the main caption. % The latest version of endfloat.sty and its
-documentation can obtained at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/endfloat/ % % The IEEEtran
-\ifCLASSOPTIONcaptionsoff conditional can also be used % later in the document,
-say, to conditionally put the References on a  % page by themselves.
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
 
 
 
 
-% *** PDF, URL AND HYPERLINK PACKAGES *** % \usepackage{url} % url.sty was
-written by Donald Arseneau. It provides better support for % handling and
-breaking URLs. url.sty is already installed on most LaTeX % systems. The latest
-version can be obtained at: % http://www.ctan.org/tex-
-archive/macros/latex/contrib/misc/ % Read the url.sty source comments for usage
-information. Basically, % \url{my_url_here}.
+%\ifCLASSOPTIONcaptionsoff
+% \usepackage[nomarkers]{endfloat}
+% \let\MYoriglatexcaption\caption
+% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
+%\fi
+% endfloat.sty was written by James Darrell McCauley and Jeff Goldberg.
+% This package may be useful when used in conjunction with IEEEtran.cls'
+% captionsoff option. Some IEEE journals/societies require that submissions
+% have lists of figures/tables at the end of the paper and that
+% figures/tables without any captions are placed on a page by themselves at
+% the end of the document. If needed, the draftcls IEEEtran class option or
+% \CLASSINPUTbaselinestretch interface can be used to increase the line
+% spacing as well. Be sure and use the nomarkers option of endfloat to
+% prevent endfloat from "marking" where the figures would have been placed
+% in the text. The two hack lines of code above are a slight modification of
+% that suggested by in the endfloat docs (section 8.3.1) to ensure that
+% the full captions always appear in the list of figures/tables - even if
+% the user used the short optional argument of \caption[]{}.
+% IEEE papers do not typically make use of \caption[]'s optional argument,
+% so this should not be an issue. A similar trick can be used to disable
+% captions of packages such as subfig.sty that lack options to turn off
+% the subcaptions:
+% For subfig.sty:
+% \let\MYorigsubfloat\subfloat
+% \renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}}
+% For subfigure.sty:
+% \let\MYorigsubfigure\subfigure
+% \renewcommand{\subfigure}[2][\relax]{\MYorigsubfigure[]{#2}}
+% However, the above trick will not work if both optional arguments of
+% the \subfloat/subfig command are used. Furthermore, there needs to be a
+% description of each subfigure *somewhere* and endfloat does not add
+% subfigure captions to its list of figures. Thus, the best approach is to
+% avoid the use of subfigure captions (many IEEE journals avoid them anyway)
+% and instead reference/explain all the subfigures within the main caption.
+% The latest version of endfloat.sty and its documentation can obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/endfloat/
+%
+% The IEEEtran \ifCLASSOPTIONcaptionsoff conditional can also be used
+% later in the document, say, to conditionally put the References on a
+% page by themselves.
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
 
 
 
 
 
-% *** Do not adjust lengths that control margins, column widths, etc. *** % ***
-Do not use packages that alter fonts (such as pslatex).         *** % There
-should be no need to do such things with IEEEtran.cls V1.6 and later. % (Unless
-specifically asked to do so by the journal or conference you plan % to submit
-to, of course. )
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex). ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
 
 
-% correct bad hyphenation here \hyphenation{op-tical net-works semi-conduc-tor}
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
 
 
-\begin{document} % % paper title % can use linebreaks \\ within to get better
-formatting as desired \title{Software Development in Startup Companies: The
-Green-field Startup Model} % % % author names and IEEE memberships % note
-positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break % a
-structure at a ~ so this keeps an author's name from being broken across % two
-lines. % use \thanks{} to gain access to the first footnote area % a separate
-\thanks must be used for each paragraph as LaTeX2e's \thanks % was not built to
-handle multiple paragraphs % % %\IEEEcompsocitemizethanks is a special \thanks
-that produces the bulleted % lists the Computer Society journals use for "first
-footnote" author % affiliations. Use \IEEEcompsocthanksitem which works much
-like \item % for each affiliation group. When not in compsoc mode, %
-\IEEEcompsocitemizethanks becomes like \thanks and % \IEEEcompsocthanksitem
-becomes a line break with idention. This % facilitates dual compilation,
-although admittedly the differences in the % desired content of \author between
-the different types of papers makes a % one-size-fits-all approach a daunting
-prospect. For instance, compsoc  % journal papers have the author affiliations
-above the "Manuscript % received ..."  text while in non-compsoc journals this
-is reversed. Sigh.
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Software Development in Startup Companies: The Green-field Startup Model}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+%
+%\IEEEcompsocitemizethanks is a special \thanks that produces the bulleted
+% lists the Computer Society journals use for "first footnote" author
+% affiliations. Use \IEEEcompsocthanksitem which works much like \item
+% for each affiliation group. When not in compsoc mode,
+% \IEEEcompsocitemizethanks becomes like \thanks and
+% \IEEEcompsocthanksitem becomes a line break with idention. This
+% facilitates dual compilation, although admittedly the differences in the
+% desired content of \author between the different types of papers makes a
+% one-size-fits-all approach a daunting prospect. For instance, compsoc
+% journal papers have the author affiliations above the "Manuscript
+% received ..." text while in non-compsoc journals this is reversed. Sigh.
 
 \author{FirstName~SecondName,~\IEEEmembership{Fellow,~IEEE,}
-..~..,~\IEEEmembership{Fellow,~IEEE,}
-and~...~....,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Author info.\protect\\ % note
-need leading \protect in front of \\ to get a newline within \thanks as % \\ is
-fragile and will error, could use \hfil\break instead. E-mail: see
-http://something/contact.html \IEEEcompsocthanksitem Author info.}% <-this %
-stops a space \thanks{}}
+        ..~..,~\IEEEmembership{Fellow,~IEEE,}
+        and~...~....,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Author info.\protect\\
+% note need leading \protect in front of \\ to get a newline within \thanks as
+% \\ is fragile and will error, could use \hfil\break instead.
+E-mail: see http://something/contact.html
+\IEEEcompsocthanksitem Author info.}% <-this % stops a space
+\thanks{}}
 
-% note the % following the last \IEEEmembership and also \thanks -  % these
-prevent an unwanted space from occurring between the last author name % and the
-end of the author line. i.e., if you had this: %  % \author{....lastname
-\thanks{...} \thanks{...} } %
-^------------^------------^----Do not want these spaces! % % a space would be
-appended to the last name and could cause every name on that % line to be
-shifted left slightly. This is one of those "LaTeX things". For % instance,
-"\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get % "AB" then you
-have to do: "\textbf{A}\textbf{B}" % \thanks is no different in this regard, so
-shield the last } of each \thanks % that ends a line with a % and do not let a
-space in before the next \thanks. % Spaces after \IEEEmembership other than the
-last one are OK (and needed) as % you are supposed to have spaces between the
-names. For what it is worth, % this is a minor point as most people would not
-even notice if the said evil % space somehow managed to creep in.
-
-
-
-% The paper headers \markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1,
-January~2007}% {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls
-for Computer  Society Journals} % The only time the second header will appear is
-for the odd numbered pages % after the title page when using the twoside option.
-%  % *** Note that you probably will NOT want to include the author's *** % ***
-name in the headers of peer review papers.                   *** % You can use
-\ifCLASSOPTIONpeerreview for conditional compilation here if % you desire.
+% note the % following the last \IEEEmembership and also \thanks -
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+%
+% \author{....lastname \thanks{...} \thanks{...} }
+% ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
 
 
 
-% The publisher's ID mark at the bottom of the page is less important with %
-Computer Society journal papers as those publications place the marks % outside
-of the main text columns and, therefore, unlike regular IEEE % journals, the
-available text space is not reduced by their presence. % If you want to put a
-publisher's ID mark on the page you can do it like % this: %\IEEEpubid{0000--
-0000/00\$00.00~\copyright~2007 IEEE} % or like this to get the Computer Society
-new two part style. %\IEEEpubid{\makebox[\columnwidth]{\hfill 0000--
-0000/00/\$00.00~\copyright~2007   % IEEE}%
-%\hspace{\columnsep}\makebox[\columnwidth]{Published by the IEEE Computer   %
-Society\hfill}} % Remember, if you use this you must call \IEEEpubidadjcol in
-the second % column for its text to clear the IEEEpubid mark (Computer Society
-jorunal % papers don't need this extra clearance.)
+% The paper headers
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer
+Society Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+%
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers. ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+% The publisher's ID mark at the bottom of the page is less important with
+% Computer Society journal papers as those publications place the marks
+% outside of the main text columns and, therefore, unlike regular IEEE
+% journals, the available text space is not reduced by their presence.
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% or like this to get the Computer Society new two part style.
+%\IEEEpubid{\makebox[\columnwidth]{\hfill 0000--0000/00/\$00.00~\copyright~2007
+% IEEE}%
+%\hspace{\columnsep}\makebox[\columnwidth]{Published by the IEEE Computer
+% Society\hfill}}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark (Computer Society jorunal
+% papers don't need this extra clearance.)
 
 
 
 
-% for Computer Society papers, we must declare the abstract and index terms %
-PRIOR to the title within the \IEEEcompsoctitleabstractindextext IEEEtran %
-command as these need to go into the title area created by \maketitle.
-\IEEEcompsoctitleabstractindextext{% \begin{abstract} %\boldmath Software
-startups are newly created companies with no operating history and  oriented in
-producing cutting-edge technologies. These companies develop  software under
-highly uncertain conditions, tackling fast growing markets with  severe lack of
-resources. Despite their increasing importance in economy there  are only few
-scientific studies attempting to address software engineering (SE)  issues,
-especially for early-stage startups. This research aims to understand  the
-software development strategies conducted by practitioners, in the period of
+% for Computer Society papers, we must declare the abstract and index terms
+% PRIOR to the title within the \IEEEcompsoctitleabstractindextext IEEEtran
+% command as these need to go into the title area created by \maketitle.
+\IEEEcompsoctitleabstractindextext{%
+\begin{abstract}
+%\boldmath
+Software startups are newly created companies with no operating history and
+oriented in producing cutting-edge technologies. These companies develop
+software under highly uncertain conditions, tackling fast growing markets with
+severe lack of resources. Despite their increasing importance in economy there
+are only few scientific studies attempting to address software engineering (SE)
+issues, especially for early-stage startups. This research aims to understand
+the software development strategies conducted by practitioners, in the period of
 time that goes from idea conception to the first open beta release. A
 \textit{grounded theory} approach guided the execution of a case study to
 explore the state-of-practice. As result, the Greenfield startup model (GSM)
@@ -412,71 +541,95 @@ possible to verify the product/market fit and to adjust the business and product
 trajectory according to early collected user feedback. Nevertheless, the need of
 shortening time-to-market, by speeding-up the development through low-precision
 and product-centric engineering activities, is counterbalanced by the need of
-restructuring the product before setting off for further growth. \end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract. % This preserves
-the distinction between vectors and scalars. However, % if the journal you are
-submitting to favors bold math in the abstract, % then you can use LaTeX's
-standard command \boldmath at the very start % of the abstract to achieve this.
-Many IEEE journals frown on math % in the abstract anyway. In particular, the
-Computer Society does % not want either math or citations to appear in the
-abstract.
+restructuring the product before setting off for further growth.
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway. In particular, the Computer Society does
+% not want either math or citations to appear in the abstract.
 
 % Note that keywords are not normally used for peer review papers.
-\begin{keywords} Software Development, Startups, Grounded Theory.
+\begin{keywords}
+Software Development, Startups, Grounded Theory.
 \end{keywords}}
 
 
-% make the title area \maketitle
+% make the title area
+\maketitle
 
 
-% To allow for easy dual compilation without having to reenter the %
-abstract/keywords data, the \IEEEcompsoctitleabstractindextext text will % not
-be used in maketitle, but will appear (i.e., to be "transported") % here as
-\IEEEdisplaynotcompsoctitleabstractindextext when compsoc mode % is not selected
-<OR> if conference mode is selected - because compsoc % conference papers
-position the abstract like regular (non-compsoc) % papers do!
-\IEEEdisplaynotcompsoctitleabstractindextext %
-\IEEEdisplaynotcompsoctitleabstractindextext has no effect when using % compsoc
-under a non-conference mode.
+% To allow for easy dual compilation without having to reenter the
+% abstract/keywords data, the \IEEEcompsoctitleabstractindextext text will
+% not be used in maketitle, but will appear (i.e., to be "transported")
+% here as \IEEEdisplaynotcompsoctitleabstractindextext when compsoc mode
+% is not selected <OR> if conference mode is selected - because compsoc
+% conference papers position the abstract like regular (non-compsoc)
+% papers do!
+\IEEEdisplaynotcompsoctitleabstractindextext
+% \IEEEdisplaynotcompsoctitleabstractindextext has no effect when using
+% compsoc under a non-conference mode.
 
 
-% For peer review papers, you can put extra information on the cover % page as
-needed: % \ifCLASSOPTIONpeerreview % \begin{center} \bfseries EDICS Category:
-3-BBND \end{center} % \fi % % For peerreview papers, this IEEEtran command
-inserts a page break and % creates the second title. It will be ignored for
-other modes. \IEEEpeerreviewmaketitle
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
 
 
 %------------------------------------------------------------------------------%
-\section{Introduction} \label{intro} % Computer Society journal papers do
-something a tad strange with the very % first section heading (almost always
-called "Introduction"). They place it % ABOVE the main text! IEEEtran.cls
-currently does not do this for you. % However, You can achieve this effect by
-making LaTeX jump through some % hoops via something like: %
-%\ifCLASSOPTIONcompsoc %  \noindent\raisebox{2\baselineskip}[0pt][0pt]% %
-{\parbox{\columnwidth}{\section{Introduction}\label{sec:introduction}% %
-\global\everypar=\everypar}}% %  \vspace{-1\baselineskip}\vspace{-\parskip}\par
-%\else %  \section{Introduction}\label{sec:introduction}\par %\fi % %
-Admittedly, this is a hack and may well be fragile, but seems to do the % trick
-for me. Note the need to keep any \label that may be used right % after \section
-in the above as the hack puts \section within a raised box.
+\section{Introduction}
+\label{intro}
+% Computer Society journal papers do something a tad strange with the very
+% first section heading (almost always called "Introduction"). They place it
+% ABOVE the main text! IEEEtran.cls currently does not do this for you.
+% However, You can achieve this effect by making LaTeX jump through some
+% hoops via something like:
+%
+%\ifCLASSOPTIONcompsoc
+% \noindent\raisebox{2\baselineskip}[0pt][0pt]%
+% {\parbox{\columnwidth}{\section{Introduction}\label{sec:introduction}%
+% \global\everypar=\everypar}}%
+% \vspace{-1\baselineskip}\vspace{-\parskip}\par
+%\else
+% \section{Introduction}\label{sec:introduction}\par
+%\fi
+%
+% Admittedly, this is a hack and may well be fragile, but seems to do the
+% trick for me. Note the need to keep any \label that may be used right
+% after \section in the above as the hack puts \section within a raised box.
 
 
 
-% The very first letter is a 2 line initial drop letter followed % by the rest
-of the first word in caps (small caps for compsoc). %  % form to use if the
-first word consists of a single letter: % \IEEEPARstart{A}{demo} file is .... %
-% form to use if you need the single drop letter followed by % normal text
-(unknown if ever used by IEEE): % \IEEEPARstart{A}{}demo file is .... %  % Some
-journals put the first two words in caps: % \IEEEPARstart{T}{his demo} file is
-.... %  % Here we have the typical use of a "T" for an initial drop letter % and
-"HIS" in caps to complete the first word. \IEEEPARstart{A}{n} impressive number
-of new software startups are launched  worldwide every day as a result of an
-increase of new markets, accessible  technologies, and venture capital
-\cite{8491286}.  With the term  \textit{software startups} we refer to those
-temporary organizations focused on  the creation of high-tech and innovative
-products, with little or no operating  history, aiming to grow by  aggressively
-scaling their business in highly  scalable markets.
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps (small caps for compsoc).
+%
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+%
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+%
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+%
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{A}{n} impressive number of new software startups are launched
+worldwide every day as a result of an increase of new markets, accessible
+technologies, and venture capital \cite{8491286}. With the term
+\textit{software startups} we refer to those temporary organizations focused on
+the creation of high-tech and innovative products, with little or no operating
+history, aiming to grow by aggressively scaling their business in highly
+scalable markets.
 
 New ventures such as \textit{Facebook}, \textit{Linkedin}, \textit{Spotify},
 \textit{Pinterest}, \textit{Instagram}, \textit{Groupon} and \textit{Dropbox},
@@ -547,7 +700,7 @@ during the first early-stage period. In this regard, we identified several
 commonalities between the issues related to software development in startups and
 the research focused at studying technical debt \cite{Nugroho2011,Izurieta2012}.
 On the other hand, researchers can take advantage from the GSM to  understand
-how the technical debt influences the future growth of startup  companies.
+how the technical debt influences the future growth of startup companies.
 
 The remainder of this paper is structured as follows:  we provide relevant
 information about startups in section \ref{backg}. Section \ref{resmet}
@@ -668,17 +821,19 @@ has been further confirmed with the empirical studies of Coleman et al.
 
 The word \textit{startup} appeared in the SE literature for the first time in
 1994 in an article written by Carmel \cite{Camel1994a} where he studied the
-time-to-completion in a young package firm. %MUN: If this is a quote  %from
-Carmel, put it in quotation marks, like you did in the previous section  %with
-Suttons quote. Generally, check that you are consistent how you use  %quotations
-throughout the paper.  %CG: fixed, btw  it was just to emphasize his the focus
-of his study.  %MUN1: Ok. As you may have noticed, I have removed a lot of cases
-were you use  %italics. If you emphasize *too* much, it it rather distracting
-than helpful  %for the reader. Furthermore, it conflicts with you convention you
-use to  %highlight high level categories of GSM. CG: ok. He noticed how these
-companies were particularly innovative and successful,  advocating for the need
-of more research investigating software development  practices so as to
-replicate success and try to transfer it to other technology  sectors.
+time-to-completion in a young package firm. %MUN: If this is a quote  
+%from Carmel, put it in quotation marks, like you did in the previous section  
+%with Suttons quote. Generally, check that you are consistent how you use  
+%quotations throughout the paper.  
+%CG: fixed, btw  it was just to emphasize his the focus of his study.  
+%MUN1: Ok. As you may have noticed, I have removed a lot of cases were you use  
+%italics. If you emphasize *too* much, it it rather distracting than helpful  
+%for the reader. Furthermore, it conflicts with you convention you use to  
+%highlight high level categories of GSM. CG: ok. 
+He noticed how these companies were particularly innovative and successful,  
+advocating for the need of more research investigating software development  
+practices so as to replicate success and try to transfer it to other 
+technology sectors.
 
 First insights reveal how software startups are product-oriented in the first
 period of their development phase \cite{Heitlager2007}. Despite good
@@ -770,15 +925,16 @@ instead of promoting product quality, aim to minimize time-to-market.
 
 Additionally, the role of SPI has been neglected because seen as an obstacle to
 the development team's creativity and flexibility, and to  the need of a quick
-delivering product process environment \cite{Coleman2008a}. %MUN: the second
-part of the sentence is just a statement without reference. If  %it refers to a
-statement by Coleman, put his reference at the end OR find the  %correct
-reference OR delete the statement. %CG fixed Product quality is left aside in
-favor of minimal and suitable functionalities  to shorten the time-to-market. As
-reported in two studies of Mater and Mirel  \cite{Mater2000, Mirel2000}, quality
-aspects, mostly taken in consideration in  internet startups, are oriented to
-usability and scalability, even though the  market and application type heavily
-influences the quality-demand  \cite{Coleman2008, Kim2005}.
+delivering product process environment \cite{Coleman2008a}. 
+%MUN: the second part of the sentence is just a statement without reference. If 
+%it refers to a statement by Coleman, put his reference at the end OR find the  
+%correct reference OR delete the statement. %CG fixed 
+Product quality is left aside in favor of minimal and suitable functionalities  
+to shorten the time-to-market. As reported in two studies of Mater and Mirel  
+\cite{Mater2000, Mirel2000}, quality aspects, mostly taken in consideration in  
+internet startups, are oriented to usability and scalability, even though the  
+market and application type heavily influences the quality-demand  
+\cite{Coleman2008, Kim2005}.
 
 To maintain the development activities, oriented to limited but suitable
 functionality, studies suggest to externalize the complexity of parts of the
@@ -787,26 +943,27 @@ project to third party solutions by means of outsourcing activities
 \cite{Wall2001, Bean2005}.  %MUN: Can you split up the references? I.e. write:
 %"outsourcing activities \cite{Bla}, software reuse \cite{Bla}, and open-source
 %strategies \cite{Bla}. %CG: fixed
+
 %------------------------------------------------------------------------------%
-\subsection{Technical debt} Notwithstanding, a new area of the SE research,
-trying to tackle the problem of  the \textit{technical debt},  brings and
-encompasses different implications in  studying development in software startups
-\cite{Tom2013}. The metaphoric  neologism was originally introduced by
-Cunningham in 1992  \cite{TechnicalDebtCunn} and has recently attracted the
-attention of SE  researchers\footnote{To attest the fact that \textit{technical
+\subsection{Technical debt} Notwithstanding, a new area of SE research,
+trying to tackle the problem of the \textit{technical debt}, brings and
+encompasses different implications in studying development in software startups
+\cite{Tom2013}. The metaphoric neologism was originally introduced by
+Cunningham in 1992 \cite{TechnicalDebtCunn} and has recently attracted the
+attention of SE researchers\footnote{To attest the fact that \textit{technical
 debt} is gaining  traction among researchers, we mention two important
-contributions which  characterize the \textit{``debt landscape''} :
-\cite{Nugroho2011,Izurieta2012}  and a dedicated workshop \cite{workshopDebt}
+contributions which characterize the \textit{``debt landscape''}:
+\cite{Nugroho2011,Izurieta2012} and a dedicated workshop \cite{workshopDebt}
 organized by the Software  Engineering Institute  and ICSE.}. The concept of
 \textit{technical debt} is  well illustrated in
-\cite{Brown:2010:MTD:1882362.1882373} : \textit{``The idea  is that developers
+\cite{Brown:2010:MTD:1882362.1882373}: \textit{``The idea  is that developers
 sometimes accept compromises in a system in one dimension  (e.g., modularity) to
 meet an urgent demand in some other dimension (e.g., a  deadline), and that such
 compromises incur a ``debt'' on which ``interest'' has  to be paid and which the
-``principal'' should be repaid at some point for the  long-term health of the
-project''}.  The compromise between high-speed and  high-quality engineering is
+``principal'' should be repaid at some point for the long-term health of the
+project''}.  The compromise between high-speed and high-quality engineering is
 faced daily by software startups, not only in terms  of architecture design but
-in multifaceted aspects (weak project management,  testing, process control).
+in multifaceted aspects (weak project management, testing, process control).
 
 Since \textit{``all decisions related to product development are trade-off
 situations''} \cite{Hilmola2003}, generally startups optimize workflows to the
@@ -820,22 +977,27 @@ sense''} \cite{Coleman2008}.
 \subsection{Terminology} In order to set a common ground and to prevent
 ambiguity, we use the following  terminology throughout the paper:
 
-\begin{compactitem} \item Software development strategy: the overall approach
-adopted by the  company to carry out the product development. \item Engineering
-activities: the activities needed to bring a product from  idea to market.
-Traditional engineering activities are, among others,  requirement engineering,
-design, architecture, implementation, testing. \item Engineering elements: any
-practice, tool and artifacts contributing and  supporting the engineering
-activities. \item Quality attributes: those overall factors that affect run-time
-behavior,  system design, and user experience. They represent areas of concern
+\begin{compactitem} 
+\item Software development strategy: the overall approach adopted by the  
+company to carry out the product development. 
+\item Engineering activities: the activities needed to bring a product from  
+idea to market. Traditional engineering activities are, among others,  
+requirement engineering, design, architecture, implementation, testing. 
+\item Engineering elements: any practice, tool and artifacts contributing and  
+supporting the engineering activities.
+\item Quality attributes: those overall factors that affect run-time
+behavior, system design, and user experience. They represent areas of concern
 that have  the potential for applications to impact across layers and tiers.
 Some of these  attributes are related to the overall system design, while others
 are specific  to run time, design time, or user centric issues
-\cite{Microsoft2009}. \item Growth: an increase in the company size respect to
-the initial conditions  in terms of either employees or users/customers, and
+\cite{Microsoft2009}. 
+\item Growth: an increase in the company size respect to the initial 
+conditions in terms of either employees or users/customers, and
 product complexity in terms  of handling an increasing number of feature
-requests. \item Software product: any software product and software service.
+requests. 
+\item Software product: any software product and software service.
 \end{compactitem}
+
 %------------------------------------------------------------------------------%
 \section{Research methodology} \label{resmet}
 
@@ -851,9 +1013,9 @@ theory study process overview} \label{fig:gt:completemethodology} \end{figure*}
 %Collection  - Change "Discussion and Validation" into "Theory Validation" as
 %you name it     in the text. Also, add a section (3.5) that describes shortly
 %what you did in "Theory  Validation"  %CG: fixed... fontsize cannot be
-increased uniformly among all the boxes, then  %I skipped that part... %MUN1:
-OK, but in the figure, the correct section number for theory validation  %is
-3.5, not 3.4. CG:fixed
+%increased uniformly among all the boxes, then  I skipped that part... 
+%MUN1: OK, but in the figure, the correct section number for theory validation  
+%is 3.5, not 3.4. CG:fixed
 
 The aim of this research is to \textit{understand how software development
 strategies are engineered by practitioners in startup companies in terms of
@@ -871,11 +1033,14 @@ questions (RQs):
 \begin{compactitem}
 
 \item RQ-1 : What is the current state-of-practice related to software
-development strategy in early-stage startups? \begin{compactitem}
+development strategy in early-stage startups? 
 
-\item RQ-1.1 : How do startups structure and execute the main engineering
-activities? \item RQ-1.2 : How are product quality attributes considered by
-startups? \end{compactitem}
+  \begin{compactitem}
+  \item RQ-1.1 : How do startups structure and execute the main engineering
+    activities? 
+  \item RQ-1.2 : How are product quality attributes considered by
+    startups? 
+  \end{compactitem}
 
 \end{compactitem}
 
@@ -984,22 +1149,35 @@ the sample according to the emerging theory. The characteristics of the sampled
 companies are reported in Table \ref{t_interviews-stats}.
 
 
-\begin{table*}[!t] renewcommand{arraystretch}{1.3} caption{Companies overview}
-\label{t_interviews-stats} centering begin{tabular}{|c||c||c||c||c||c|}
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.3}
+\caption{Companies overview}
+\label{t_interviews-stats}
+\centering
+\begin{tabular}{|c||c||c||c||c||c|}
 
-\hline     ID  &  Company age & Founding & Initial & Current & First product  \\
-&   (months)   & team   & developers  & employees  &  building time \\
-&      & &   &  & (months)   \\    \hline C1    & 11    & 4     & 2     & 11
-& 6   \\ C2    & 5     & 2     & 2     & 6     & 3      \\ C3    & 18    & 4
-& 4     & 4     & 6      \\ C4    & 17    & 3     & 2     & 11    & 6     \\ C5
-& 20    & 2     & 1     & 4     & 12   \\ C6    & 30    & 3     & 2     & 4
-& 1      \\ C7    & 12    & 2     & 1     & 7     & 4      \\ C8    & 24    & 4
-& 3     & 16    & 4    \\ C9    & 5     & 5     & 4     & 5     & 1     \\ C10
-& 43    & 6     & 4     & 9     & 4      \\ C11   & 36    & 3     & 3     & 6
-& 2     \\ C12   & 12    & 3     & 3     & 3     & 3      \\ C13   & 24    & 2
-& 2     & 20    & 3     \\
+\hline
+    ID & Company age & Founding & Initial & Current & First product \\
+    & (months) & team & developers & employees & building time \\
+                    & & & & & (months) \\
+   \hline
+C1 & 11 & 4 & 2 & 11 & 6 \\
+C2 & 5 & 2 & 2 & 6 & 3 \\
+C3 & 18 & 4 & 4 & 4 & 6 \\
+C4 & 17 & 3 & 2 & 11 & 6 \\
+C5 & 20 & 2 & 1 & 4 & 12 \\
+C6 & 30 & 3 & 2 & 4 & 1 \\
+C7 & 12 & 2 & 1 & 7 & 4 \\
+C8 & 24 & 4 & 3 & 16 & 4 \\
+C9 & 5 & 5 & 4 & 5 & 1 \\
+C10 & 43 & 6 & 4 & 9 & 4 \\
+C11 & 36 & 3 & 3 & 6 & 2 \\
+C12 & 12 & 3 & 3 & 3 & 3 \\
+C13 & 24 & 2 & 2 & 20 & 3 \\
  
-\hline end{tabular} end{table*}
+\hline
+\end{tabular}
+\end{table*}
 
 All companies, except C10, were founded within the last three years (2009-2012),
 %MUN: I've shortened the text and added absolute numbers. Is 2009-2012 correct?
@@ -1030,11 +1208,12 @@ the repertory grid principles \cite{Edwards2009}. To obtain better chances of
 quickly obtaining responses, questionnaires have been sent to respondents
 immediately after transcribing the interview results. Most of the follow-up
 questionnaires have been collected within one day after the conclusion of the
-last interview.    %MUN: I don't understand this: you %collected the data from
-questionnaires after ALL interviews have been  %finished, but on the other hand
-you said the overall process was iterative  %(data analysis and triangulation
-let themes emerge which in turn were used %in subsequent interviews).  %CG:
-fixed...
+last interview.    
+%MUN: I don't understand this: you %collected the data from questionnaires 
+%after ALL interviews have been finished, but on the other hand
+%you said the overall process was iterative  (data analysis and triangulation
+%let themes emerge which in turn were used %in subsequent interviews).  
+%CG: fixed...
 
 %------------------------------------------------------------------------------%
 \subsection{Data collection} The data collection was designed to allow
@@ -1067,16 +1246,19 @@ following the steps listed below:
 \begin{compactitem}
 
 \item Labels were assigned to raw data, and a first low-level conceptualization
-was carried out using both in-vivo and open coding \cite{ColinRobson2009}. \item
-Concepts were grouped together into theoretical categories and  subcategories.
-By means of axial coding we first described the different  relations between
-subcategories, and then relations between subcategories and  categories. \item
-Categories were refined several times in the attempt to create different  levels
-of abstraction and adjusting concepts, aided by a simple knowledge  management
-tool. \item Consistency among categories was validated by exploring and
-analyzing  links among subcategories by means of selective coding. \item The
-core category - the one with the greatest explanatory power - was  identified by
-analyzing the causal relations between high-level categories. \end{compactitem}
+was carried out using both in-vivo and open coding \cite{ColinRobson2009}. 
+\item Concepts were grouped together into theoretical categories and  
+subcategories. By means of axial coding we first described the different  
+relations between subcategories, and then relations between subcategories and  
+categories. 
+\item Categories were refined several times in the attempt to create different  
+levels of abstraction and adjusting concepts, aided by a simple knowledge  
+management tool. 
+\item Consistency among categories was validated by exploring and
+analyzing  links among subcategories by means of selective coding. 
+\item The core category - the one with the greatest explanatory power - was  
+identified by analyzing the causal relations between high-level categories. 
+\end{compactitem}
 
 
 During data extraction we used the technique of in-vivo coding since
@@ -1130,32 +1312,39 @@ interview execution, where we systematically analyzed the theoretical framework
 by means of the paradigm model introduced by Corbin \cite{Corbin1990}. The
 paradigm model is composed by:
 
-\begin{compactitem} \item \textit{Causal conditions}: the events which lead to
-the occurrence of  the phenomenon, that is our core category \item
-\textit{Context}: set of conditions in which the phenomenon can be  extrapolated
+\begin{compactitem} 
+\item \textit{Causal conditions}: the events which lead to the occurrence of  
+the phenomenon, that is our core category 
+\item \textit{Context}: set of conditions in which the phenomenon can be 
+extrapolated
 \item \textit{Intervening conditions}: the broader set of conditions from that
-the phenomenon can be generalized \item \textit{Action/interaction strategies}:
-the actions and responses that  occur as the result of the phenomenon \item
-\textit{Consequences}: specification of the outcomes, both intended and
-unintended of the actions and interaction strategies \end{compactitem}
+the phenomenon can be generalized 
+\item \textit{Action/interaction strategies}: the actions and responses that  
+occur as the result of the phenomenon 
+\item \textit{Consequences}: specification of the outcomes, both intended and
+unintended of the actions and interaction strategies 
+\end{compactitem}
 
 Within the limits of the critical bounding assumptions, the role of the
 generated theory is to explain, predict and understand the underlying
 phenomenon.
 
 %------------------------------------------------------------------------------%
-\subsection{Theory Validation} \label{rm:val} %MUN: put here what I wrote in the
-comment in Section "Theory validation" (i.e. %the section following the GSM)
-%CG: fixed %MUN1: This description is way too long and verbose. It should be MAX
-1 column,  %and focus on what you present in Section 5. Theory Validation. Until
-the  %second-last paragraph you don't talk about that at all! Remove the
-"theory" on  %GT validation and what you did *during* the GT process. Keep what
-you need  %to motivate % - 5.1 Comparison of frameworks % - 5.2 Theoretical
-categories and existing literature % - 5.3 Confounding factors % - 5.4 Static
-assessment of the GSM %You need to explain why you did this and how it
-contributes to the validation  %of the theory. CG: fixed, removing the initial
-verbose part.
-
+\subsection{Theory Validation} \label{rm:val} 
+%MUN: put here what I wrote in the comment in Section "Theory validation" (i.e. 
+%the section following the GSM)
+%CG: fixed 
+%MUN1: This description is way too long and verbose. It should be MAX 1 column, 
+%and focus on what you present in Section 5. Theory Validation. Until the  
+%second-last paragraph you don't talk about that at all! Remove the "theory" on 
+%GT validation and what you did *during* the GT process. Keep what you need  
+%to motivate 
+% - 5.1 Comparison of frameworks 
+% - 5.2 Theoretical categories and existing literature 
+% - 5.3 Confounding factors 
+% - 5.4 Static assessment of the GSM 
+%You need to explain why you did this and how it contributes to the validation  
+%of the theory. CG: fixed, removing the initial verbose part.
 
 Presenting GT is challenging for a researcher, who must pay attention to
 structure the included level of detail, and to the way data is portrayed to
@@ -1167,15 +1356,19 @@ Strauss and Corbin provided a list of questions to assist in  determining how
 well the findings are grounded \cite{Strauss1998}. They  questions are as
 follows:
 
-\par\vspace {0.4cm} \begin{compactenum} \item Are concepts generated, and are
-the concepts systematically related? \item Are there many conceptual linkages
-and are the categories well developed? \item Is variation\footnote{Variation
-refers to the variety of contexts to  which the theory can be applied.} built
-into the theory and are the conditions  under which variation can be found built
-into the study and explained? \item Are the conditions under which variation can
-be found built into the  study and explained? \item Has the process been taken
-into account, and does the theory stand the  test of time? \item Do the
-theoretical findings seem significant, and to what extent? \end{compactenum}
+\par\vspace {0.4cm} 
+\begin{compactenum} 
+\item Are concepts generated, and are the concepts systematically related? 
+\item Are there many conceptual linkages and are the categories well developed? 
+\item Is variation\footnote{Variation refers to the variety of contexts to  
+which the theory can be applied.} built into the theory and are the conditions  
+under which variation can be found built into the study and explained? 
+\item Are the conditions under which variation can be found built into the  
+study and explained? 
+\item Has the process been taken into account, and does the theory stand the  
+test of time? 
+\item Do the theoretical findings seem significant, and to what extent? 
+\end{compactenum}
 \par\vspace {0.4cm}
 
 Answering the above questions, the concepts were generated according to the
@@ -1212,7 +1405,7 @@ to quantify the measures are illustrated in Appendix.
 
 
 
-\section{Results: Green-field startup model} label{res:gsm}
+\section{Results: Green-field startup model}\label{res:gsm}
 
 By analyzing the interview transcripts with the GT process we extracted the
 information necessary to form the theoretical model. The initial coding process
@@ -1239,8 +1432,11 @@ and preceding nodes, called predecessors. The relations between them are denoted
 by the direction of the interconnecting arrows. The network is read from left to
 right.
 
-\begin{figure*}[!t] centering includegraphics[width=4in]{figures/high-level}
-\caption{Green-field startup model}label{fig:gsm} end{figure*}
+\begin{figure*}[!t] 
+\centering 
+  \includegraphics[width=4in]{figures/high-level}
+  \caption{Green-field startup model}\label{fig:gsm}
+\end{figure*}
 
 In forthcoming the explanation of the GSM we emphasize labels of theoretical
 categories using the \textit{italic} font style. For the main categories shown
@@ -1252,9 +1448,9 @@ the one (category) with the greatest explanatory  power''}  \cite{Strauss1998}.
 The meaning of the labels on the three arrows that  reach the core category
 (efficiency, effectiveness and performance) is discussed  in detail in section
 \ref{sect:theory:validation:stats}. %MUN: this refers to the validity threats
-%section. Do you mean rather the "Theory Validation" section? %CG:fixed %MUN1:
-this should be \ref{sect:theory:validation:stats}, right? Section 5 is  %quite
-long and you should point to the correct subsection. CG: fixed.
+%section. Do you mean rather the "Theory Validation" section? %CG:fixed 
+%MUN1: this should be \ref{sect:theory:validation:stats}, right? Section 5 is  
+%quite long and you should point to the correct subsection. CG: fixed.
 
 A contextual condition which characterizes, to some extent, each and every
 startup, is the \textit{severe lack of resources}. In fact, the capabilities of
@@ -1267,11 +1463,12 @@ implementing an essential set of functionalities and it is one of the main
 reasons why the \textit{product quality has low priority} respect to other more
 urgent needs\footnote{There are some exceptions where the quality aspects
 actually matter and such cases will be discussed in section \ref{sect:an:comp
-:cat-vs-literature:conf}%MUN:  %this refers to the validity threats section. Do
-you mean rather the "Theory  %Validation" section? %CG fixed %MUN1: Same here,
-point to the correct subsection. CG:fixed .}. At the same time, to be able to
-deal with such constraints, startups must  depend on a small group of capable
-and motivated individuals.
+:cat-vs-literature:conf}
+%MUN: this refers to the validity threats section. Do you mean rather the 
+%"Theory Validation" section? %CG fixed 
+%MUN1: Same here, point to the correct subsection. CG:fixed 
+.}. At the same time, to be able to deal with such constraints, startups must  
+depend on a small group of capable and motivated individuals.
 
 As it has been unanimously expressed by respondents, from a software
 perspective, the most urgent priority is to \textit{speed-up the development} as
@@ -1308,11 +1505,11 @@ in Table \ref{t_interviews-stats} (i.e. Cx) to highlight statements recorded
 from the interviewees.
 
 %------------------------------------------------------------------------------%
-\subsection{Severe lack of resources} \label{res:gsm:cat7} The concept of
-\textit{severe lack of resources} characterizes the uncertainty  of the
-development strategies in startups and it is composed by three  subcategories:
-\textit{time-shortage}, \textit{limited human resources} and  \textit{limited
-access to expertise}.
+\subsection{Severe lack of resources}\label{res:gsm:cat7} 
+The concept of \textit{severe lack of resources} characterizes the uncertainty  
+of the development strategies in startups and it is composed by 
+three subcategories: \textit{time-shortage}, \textit{limited human resources} 
+and \textit{limited access to expertise}.
 
 
 Since startups want to bring the product to market as quickly as possible, the
@@ -1338,9 +1535,9 @@ aid of mentors or advisors. Under these strict limitations, most of the
 decisions related to software development are fundamentally trade-off
 situations (confirming Himola's results \cite{Hilmola2003}).
 %------------------------------------------------------------------------------%
-\subsection{Team is the catalyst of development} \label{res:gsm:cat4} Among the
-different aspects fostering the speed of the development process, the  startups'
-main focus is on the characteristics of the initial team.
+\subsection{Team is the catalyst of development} \label{res:gsm:cat4} 
+Among the different aspects fostering the speed of the development process, 
+the startups' main focus is on the characteristics of the initial team.
 
 In startups \textit{developers have big responsibilities}. In fact, the
 \textit{limited human resources}, discussed in CAT7, cause the team-members to
@@ -1378,11 +1575,13 @@ A \textit{limited access to expertise} forces the team to rely mainly on their
 personal abilities, even though asking opinions to mentors is reported to be a
 viable practice to maintain feasible objectives. Furthermore \textit{teams work
 under constant pressure}, \textit{``up to 16 hours per day''}, %MUN: add Cx to
-%this statement since it is a citation?  %CG: not fixed. It represents a
-subcategory, expressed by the 70% of the  %interviewed startups %MUN1: and how
-should the reader know that? See my problem with italics: you  %use italics for
-both interview statements and (sub-)categories. CG: skip as acked mainly
-constrained by a tight \textit{time shortage}.
+%this statement since it is a citation?  
+%CG: not fixed. It represents a subcategory, expressed by the 70% of the  
+%interviewed startups 
+%MUN1: and how should the reader know that? See my problem with italics: you  
+%use italics for both interview statements and (sub-)categories. 
+%CG: skip as acked 
+mainly constrained by a tight \textit{time shortage}.
 
 Finally, startups present founders-centric structures, and especially in the
 early-stage, it is clear that \textit{CTO/CEO background has high-impact} on the
@@ -1393,9 +1592,9 @@ the development process, most of the decision are taken consensually by all
 members of the team. Then, the CTO/CEO decides only in particular situations
 where some conflicts occur.
 %------------------------------------------------------------------------------%
-\subsection{Evolutionary approach} \label{res:gsm:cat2} Among different
-approaches to development, startups prefer to build an initial  prototype and
-iteratively refine it over time, similarly to the concept of
+\subsection{Evolutionary approach}\label{res:gsm:cat2} 
+Among different approaches to development, startups prefer to build an initial  
+prototype and iteratively refine it over time, similarly to the concept of
 \textit{``evolutionary prototyping''} \cite{EvProt}. The reason of using this
 approach is that startups want to validate the product against the market as
 soon as possible, finding the proper product/market fit. Indeed, they can focus
@@ -1450,12 +1649,12 @@ startups attempt to \textit{find what is valuable for customers} with activities
 in agreement with Blank's \textit{Customer validation} stage \cite{Blank2005}.
 
 %------------------------------------------------------------------------------%
-\subsection{Product quality has low priority} \label{res:gsm:cat3} The interests
-of software startups, related to the product, are mainly  concentrated on
-building a  \textit{limited number of suitable functionalities}  rather than
-fulfilling restrictive non-functional requirements. This strategy  allows them
-to quickly release simple products with less need of preliminary  architectural
-studies.
+\subsection{Product quality has low priority}\label{res:gsm:cat3}
+The interests of software startups, related to the product, are mainly  
+concentrated on building a  \textit{limited number of suitable functionalities} 
+rather than fulfilling restrictive non-functional requirements. This strategy  
+allows them to quickly release simple products with less need of preliminary  
+architectural studies.
 
 
 Exploring quality aspects considered during the development process, the only
@@ -1484,8 +1683,8 @@ time shortages, startups can analyze similar products of bigger companies which
 can afford more rigorous usability studies. Then, the users' feedback and
 product metrics begin to have a central role in determining the level of UX
 achieved. Product metrics are typically web-based \textit{statistical hypothesis
-testing}, such as A/B testing \cite{AB}.  %MUN: add reference or explain shortly
-what A/B testing is %CG: fixed
+testing}, such as A/B testing \cite{AB}.
+%MUN: add reference or explain shortly what A/B testing is %CG: fixed
 
 Other than UX, some other factors can influence the quality concerns of
 development:
@@ -1497,25 +1696,29 @@ development:
 engineers avoid wasting time in excessive improvements of not-validated
 functionalities. The level of efficiency can be optimized after attesting the
 effectiveness of the minimal set of functionalities, obtained according to CAT2
-and to the concept of MVP. \item The \textit{product should be reasonably ready-
-to-scale} to be able to  accommodate a potential growth of the user-
-base\footnote{Note that startups  tackle fast growing markets which are
-particularly subject to sudden user  growths}. Thanks to modern cloud services,
-startups can \textit{externalize  complexity to third party solutions} achieving
-a good level of scalability with  a reasonable effort. \item Realizing high
-reliability is not an urgent priority since \textit{users  are fault-tolerant in
-innovative beta products}. In these cases, users have  typically a positive
-attitude towards the product, even though it presents  unreliable behaviours. In
-this regard, the main focus of beta testing is  reducing frictions between the
-product and the users, often incorporating  usability testing. In fact, the beta
-release is typically the first time that  the software is available outside of
-the organization that developed it.  \footnote{Detailed discussion of the impact
-of innovative products on the user  satisfaction is presented in subsection
-\ref{sect:an:comp:cat-vs-literature:conf}}. %MUN: do you use the Kano model in
-Theory Validation? Change text to refer to  %the correct section. [After I've
-read the respective section, I'd suggest to  %remove the Kano discussion
-altogether to shorten the paper. Keep the footnote,  %reference the correct
-section, but remove "according to the Kano model] %CG: fixed \end{compactitem}
+and to the concept of MVP. 
+\item The \textit{product should be reasonably ready-to-scale} to be able to  
+accommodate a potential growth of the user-base\footnote{Note that startups  
+tackle fast growing markets which are particularly subject to sudden user  
+growths}. Thanks to modern cloud services, startups can \textit{externalize  
+complexity to third party solutions} achieving a good level of scalability with 
+a reasonable effort. 
+\item Realizing high reliability is not an urgent priority since \textit{users  
+are fault-tolerant in innovative beta products}. In these cases, users have  
+typically a positive attitude towards the product, even though it presents  
+unreliable behaviours. In this regard, the main focus of beta testing is 
+reducing frictions between the product and the users, often incorporating  
+usability testing. In fact, the beta release is typically the first time that  
+the software is available outside of the organization that developed it.  
+\footnote{Detailed discussion of the impact of innovative products on the user  
+satisfaction is presented in subsection 
+\ref{sect:an:comp:cat-vs-literature:conf}}. 
+%MUN: do you use the Kano model in Theory Validation? Change text to refer to  
+%the correct section. [After I've read the respective section, I'd suggest to  
+%remove the Kano discussion altogether to shorten the paper. Keep the footnote, 
+%reference the correct section, but remove "according to the Kano model] 
+%CG: fixed 
+\end{compactitem}
 
 
 Finally, startups implement a \textit{limited number of suitable
@@ -1523,11 +1726,11 @@ functionalities}, which in view of \textit{limited human resources} and
 \textit{time shortage}, represent a viable strategy to focus on shortening
 time-to-market.
 %------------------------------------------------------------------------------%
-\subsection{Speed-up development} \label{res:gsm:cat1} As remarked initially,
-\textit{speed-up development} represents the core  category of the GSM. Firmly
-grounded as the primary objective of startups, it  shows the most important
-characteristic of developing software in the early  stage.
-
+\subsection{Speed-up development}\label{res:gsm:cat1} 
+As remarked initially, \textit{speed-up development} represents the core  
+category of the GSM. Firmly grounded as the primary objective of startups, it  
+shows the most important characteristic of developing software in the early  
+stage.
 
 As mentioned before, in order to \textit{speed-up development}, startups adopt
 evolutionary approaches supported by a solid team focusing on implementing a
@@ -1595,13 +1798,12 @@ practitioners, such way of working can be an effective strategy only in the
 short term since it can lead to poorly maintainable code and developer burnouts
 in the long run.
 %------------------------------------------------------------------------------%
-\subsection{Accumulated technical debt} \label{res:gsm:cat5} Startups achieve a
-very high development speed by radically ignoring aspects  related to
-documentation, structures and processes. However, although these  aspects are
-not considered important in the very first stages, they will become
+\subsection{Accumulated technical debt}\label{res:gsm:cat5} 
+Startups achieve a very high development speed by radically ignoring aspects  
+related to documentation, structures and processes. However, although these  
+aspects are not considered important in the very first stages, they will become
 increasingly more important for the productivity in the long-term, as we
 illustrate in CAT6.
-
 
 Instead of traditional requirement engineering activities, startups make use of
 \textit{informal specification of functionalities} by means of ticked-based
@@ -1689,17 +1891,16 @@ startups make use of   \textit{simple and informal workflow},
 \textit{standard/known technologies},  \textit{very small and co-located
 development team} with \textit{limited need of  formalities}.
 %------------------------------------------------------------------------------%
-\subsection{Initial growth hinders performance} \label{res:gsm:cat6} The lack of
-attention given in the first phases to engineering activities  allows startups
-to ship code extremely quickly (see CAT5). However, if  successful, the initial
-product becomes more and more complex over time, the  number of users increases
-and the company size starts to grow. Under these  circumstances the need of
-controlling the initial chaos forces the development  team to return the
-\textit{accumulated technical debt} instead of focusing on  new users' requests.
-Hence, \textit{initial growth hinders performance} in terms  of number of new
-user stories implemented in a certain amount of time, which  brings new suitable
-functionalities to the users.
-
+\subsection{Initial growth hinders performance}\label{res:gsm:cat6} 
+The lack of attention given in the first phases to engineering activities  
+allows startups to ship code extremely quickly (see CAT5). However, if  
+successful, the initial product becomes more and more complex over time, the  
+number of users increases and the company size starts to grow. Under these  
+circumstances the need of controlling the initial chaos forces the development  
+team to return the \textit{accumulated technical debt} instead of focusing on  
+new users' requests. Hence, \textit{initial growth hinders performance} in terms 
+ of number of new user stories implemented in a certain amount of time, which  
+brings new suitable functionalities to the users.
 
 When the number of users increases, customers become more quality demanding and
 also scalability issues start to arise. Usually, \textit{company and user size
@@ -1777,9 +1978,10 @@ becomes of major relevance. C11 states: \textit{``Yet, it is still better to
 have a reasonable drop-down in performance when team grows than lose time in the
 beginning''}.
 %------------------------------------------------------------------------------%
-\subsection{Theory} \label{res:gsm:th} In order to explain and understand the
-development strategies in early-stage  software startups we construct the theory
-generated and supported by the above  presented GSM:
+\subsection{Theory}\label{res:gsm:th}
+In order to explain and understand the development strategies in early-stage  
+software startups we construct the theory generated and supported by the above  
+presented GSM:
 
 \begin{theory} Focusing on limited number of suitable functionalities, and
 adopting partial  and rapid evolutionary development approaches, early-stage
@@ -1792,8 +1994,8 @@ temporary drop-down in  performance before setting off for further growth.
 \end{theory}
 
 As discussed in section \ref{res:val} %MUN: this refers to the validity threats
-%section. Do you mean rather the "Theory Validation" section? %CG:fixed , we
-formed the theory by applying the paradigm model, introduced by Corbin
+%section. Do you mean rather the "Theory Validation" section? %CG:fixed
+, we formed the theory by applying the paradigm model, introduced by Corbin
 \cite{Corbin1990}. The theory is composed by different elements reflecting the
 paradigm model:
 
@@ -1801,27 +2003,31 @@ paradigm model:
 
 \item \textit{Causal conditions} are represented by three main conceptual
 categories: \textit{product quality has low priority}, \textit{evolutionary
-approach} and \textit{team is the catalyst of development}. \item
-\textit{Phenomenon} is represented by the core category \textit{speed-up
-development}. \item \textit{Context} is limited to web early-stage software
-startups  operating in conditions of severe lack of resources aiming to early
-find  product/market fit. \item \textit{Intervening conditions} are  summarized
-by the extremely  uncertain development environment. \item \textit{Action and
-interaction strategies} are represented by the  accumulation of technical debt.
+approach} and \textit{team is the catalyst of development}. 
+\item \textit{Phenomenon} is represented by the core category \textit{speed-up
+development}. 
+\item \textit{Context} is limited to web early-stage software startups  
+operating in conditions of severe lack of resources aiming to early
+find  product/market fit. 
+\item \textit{Intervening conditions} are  summarized by the extremely  
+uncertain development environment. 
+\item \textit{Action and interaction strategies} are represented by the  
+accumulation of technical debt.
 \item \textit{Consequences} lead to a temporary performance drop-down.
 \end{compactitem}
 
 %------------------------------------------------------------------------------%
 \section{Theory Validation} \label{res:val}
 
-In this section we discuss the validity of the GSM by means of  cross-
-methodological observations, as discussed in section \ref{rm:val}. %MUN: expand
-this discussion a bit (motivation why you do this like you do it)  %and move to
-Section 3.5. Then write here just that you perform theory  %validation as
-discussed in Section 3.5 (and remove the bullet list below). %CG:fixed %MUN1:
-Ok, but fix section 3.5... you see that you don't motivate 5.1-5.4 at  %all
-there and that the current content of 3.5 is not related to what you  %actually
-do here as validation? CG: skip as acked
+In this section we discuss the validity of the GSM by means of 
+cross-methodological observations, as discussed in section \ref{rm:val}. 
+%MUN: expand this discussion a bit (motivation why you do this like you do it)  
+%and move to Section 3.5. Then write here just that you perform theory  
+%validation as discussed in Section 3.5 (and remove the bullet list below). 
+%CG:fixed 
+%MUN1: Ok, but fix section 3.5... you see that you don't motivate 5.1-5.4 at  
+%all there and that the current content of 3.5 is not related to what you  
+%actually do here as validation? CG: skip as acked
 
 
 %------------------------------------------------------------------------------%
@@ -1838,9 +2044,9 @@ best of our knowledge, conducted a similar research in startups' context, even
 though with a different focus. Coleman investigated factors in software
 development that hinder initiatives of software process improvement (SPI) in a
 later stage, representing also companies in expansion phase with more than 100
-employees. %MUN: so he did not do research  %in a startup context? You need to
-clarify what you mean by "more mature  %companies"... I assume you still mean
-startups, but startups at a later stage,  %i.e. after first product release.
+employees. %MUN: so he did not do research  in a startup context? You need to
+%clarify what you mean by "more mature companies"... I assume you still mean
+%startups, but startups at a later stage, i.e. after first product release.
 %CG: fixed
 
 In this subsection we illustrate the most important aspects considered by
@@ -1916,9 +2122,10 @@ size-fits-all''} solutions have always found difficulty in  penetrating small
 software organizations \cite{Staples2007}. When startups began  establishing any
 SPI process, they experienced \textit{process erosions}   \cite{Coleman2008}
 %MUN:  %add ref (Coleman?). You should add, for each category you use from
-Coleman,  %add the reference to the paper. This makes it clear that the category
-comes  %from him (and is not one of our categories) %CG: fixed , which resolved
-to a barely sufficient workflow to satisfy the organizational  business needs.
+%Coleman, add the reference to the paper. This makes it clear that the category
+%comes from him (and is not one of our categories) %CG: fixed 
+, which resolved to a barely sufficient workflow to satisfy the organizational  
+business needs.
 
 Then, software startups favor the use of agile principles in support of
 \textit{creativity} and \textit{flexibility} instead of SPI methods, whereby
@@ -1928,9 +2135,9 @@ prevent the use of heavy bureaucracy and formal communication strategies %MUN:
 %bureaucracy AND fast communication strategies" I agree that ad-hoc solutions
 %do not produce heavy bureaucracy, but they allow fast communication
 %strategies... I may be wrong, but then you need to explain it better %CG:fixed,
-you are right :) ...   , even though the accumulated tacit knowledge is hard to
-manage and to transfer  to new hires as also discussed in category
-\textit{CAT6}.
+%you are right :) ...   
+, even though the accumulated tacit knowledge is hard to manage and to transfer 
+to new hires as also discussed in category \textit{CAT6}.
 
 Coleman describes how the \textit{``management approach''} is oriented towards
 \textit{``embrace and empower''} solutions in contrast with \textit{``command
@@ -1953,22 +2160,23 @@ found that despite Coleman's study contributes to define which factors hinder
 the introduction of SPI in startups  %MUN: add: "of SPI in startups"? CG: fixed
 his results are coherent with the theory generated within our research, focusing
 at explaining the overall strategies within software development in startups.
-%MUN: add "our research, focused at explaining software development in %general
-in startups." ? CG:fixed In this regard, a wide variability of processes is a
-key factor for startups.   In contrast with some SPI processes, such as
-\textit{Six Sigma} which objective  is minimizing unpredictability in the
-definition of workflows \cite{Sixsigma},  startups seem to follow the
-\textit{Fischer's Fundamental Theorem of natural   selection} \cite{Fisher}.
+%MUN: add "our research, focused at explaining software development in 
+%general in startups." ? CG:fixed 
+In this regard, a wide variability of processes is a key factor for startups.   
+In contrast with some SPI processes, such as \textit{Six Sigma} which objective 
+is minimizing unpredictability in the definition of workflows \cite{Sixsigma}, 
+startups seem to follow the \textit{Fischer's Fundamental Theorem of natural   
+selection} \cite{Fisher}.
 Moving towards flexible and variable processes (easy  to adapt to the uncertain
 conditions), increase the odds of ``natural  selection'' only when some
 ``restrictive conditions'' are met. In other words, even though ignoring SPI
 practices is advisable, under circumstances of high uncertainty and severe lack
-of resources, %MUN: under which  %circumstances? This statement sounds too
-%general, i.e. don't do SPI ever... %CG: fixed  %And the following part,I did
-not fully understand. Try to clarify. CG:fixed   not following SPI does not
-predict major adaptiveness of startups development towards the customer's needs.
-Nevertheless, to imply a major evolutionary product/market fit, certain
-conditions explained in GSM need to be considered.
+of resources, %MUN: under which circumstances? This statement sounds too
+%general, i.e. don't do SPI ever... %CG: fixed  
+%And the following part,I did not fully understand. Try to clarify. CG:fixed   
+not following SPI does not predict major adaptiveness of startups development 
+towards the customer's needs. Nevertheless, to imply a major evolutionary 
+product/market fit, certain conditions explained in GSM need to be considered.
 
 %MUN: As I wrote already in the previous draft, you need to clarify at the
 %beginning of this subsection which frameworks you are going to compare GSM to.
@@ -1991,9 +2199,10 @@ influence development are:
 
 \begin{compactenum}
 
-\item A desperate rush-to-market. \item A new and unique software market
-environment. \item A lack of experience developing software under the conditions
-this  environment imposed.
+\item A desperate rush-to-market. 
+\item A new and unique software market environment. 
+\item A lack of experience developing software under the conditions this  
+environment imposed.
 
 \end{compactenum}
 
@@ -2004,25 +2213,26 @@ with different research focus and context of study % - understand how and why
 %Internet-speed software development (i.e. an agile method oriented using daily
 %builds aimed at developing a product with high speed) differs from traditional
 %software development - MUN: put this sentence where you introduce
-%Baskerville's work. %CG: fixed , Baskerville revealed similar causal factors as
-the GSM.
+%Baskerville's work. %CG: fixed 
+, Baskerville revealed similar causal factors as the GSM.
 
 Baskerville argues that the dawn of the Internet era has intensified software
 development problems by emphasizing shorter cycle times, stating to:
 
-\begin{compactitem} \item Speed-up development by releasing more often the
-software and  ``implanting'' customers in the development environment (similar
-to the  \textit{find the product/market fit} concept presented in CAT2).  \item
-Make heavy use of simple tools and existing components (similar to the  concepts
-expressed in CAT1). \item Invest time in facilitating development of scalable
-systems by the use of  simple but stable architectural solutions (see
-subcategory \textit{using  modularization and frameworks from day 1} discussed
-in CAT5).  \item Tailor the development process daily according to the intense
-demands for  speed. In this regard, he argues that the trend is to skip phases
-or tasks that  might impede the ability to deliver software quickly even though
-producing lower  quality software.
-  
-
+\begin{compactitem} 
+\item Speed-up development by releasing more often the software and  
+``implanting'' customers in the development environment (similar
+to the  \textit{find the product/market fit} concept presented in CAT2).
+\item Make heavy use of simple tools and existing components (similar to the  
+concepts expressed in CAT1). 
+\item Invest time in facilitating development of scalable systems by the use of 
+simple but stable architectural solutions (see subcategory \textit{using  
+modularization and frameworks from day 1} discussed
+in CAT5).
+\item Tailor the development process daily according to the intense demands for 
+speed. In this regard, he argues that the trend is to skip phases or tasks that 
+might impede the ability to deliver software quickly even though producing lower 
+quality software.
 \end{compactitem}
 
 With a wider research focus, Brooks \cite{BrooksJr1987} discussed what
@@ -2056,22 +2266,24 @@ description:
 
 \begin{compactitem}
 
-\item Buy versus build-  the most radical possible solution for constructing
+\item Buy versus build- the most radical possible solution for constructing
 software is not to construct it at all, taking advantage of what others have
 already implemented. It is the main strategy, which enables startups to
 externalize complexity to third party solutions explained within CAT1,   \textit
-{speed-up development}. \item Requirements refinement and rapid prototyping-
-avoid deciding precisely  what to build but rather iteratively extract and
-refine the product requirements  with customers and users. It represents the
-evolutionary development approach to  maintain a fast release-cycles during
-development (CAT2). \item Incremental development- starting from simple
-solutions allows  organizations to early prototype and control complexity
-overtime. It represents  the main purpose of focusing on \textit{limited number
-of suitable  functionalities} examined in \textit{product quality has low
-priority}  category  (CAT3). \item Great team- people are the center of a
-software project and it is  profoundly important to empower and liberate their
-creative mind. It is the main  objective of empowering developers' capabilities
-described in \textit{team is  the catalyst of development} (CAT4).
+{speed-up development}. 
+\item Requirements refinement and rapid prototyping- avoid deciding precisely  
+what to build but rather iteratively extract and refine the product requirements 
+with customers and users. It represents the evolutionary development approach to 
+maintain a fast release-cycles during development (CAT2). 
+\item Incremental development- starting from simple solutions allows 
+organizations to early prototype and control complexity overtime. It represents 
+the main purpose of focusing on \textit{limited number of suitable 
+functionalities} examined in \textit{product quality has low priority} category 
+(CAT3). 
+\item Great team- people are the center of a software project and it is  
+profoundly important to empower and liberate their creative mind. It is the main 
+objective of empowering developers' capabilities described in \textit{team is  
+the catalyst of development} (CAT4).
 \end{compactitem}
 
 Brooks' forecast about software development strategies is revealed to be
@@ -2088,54 +2300,68 @@ shows the main contributions of the 37 identified studies, where an 'X' is
 placed in correspondence to the theoretical category they considered. The table
 is sorted by the number of GSM categories covered by the studies.
 
-\begin{table*}[!t] renewcommand{arraystretch}{1.3} caption{SMS cite{SMS} and
-\GSM}  label{tab:an:literature_comp} centering
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.3}
+\caption{SMS \cite{SMS} and GSM}
+\label{tab:an:literature_comp}
+\centering
 \begin{tabular}{|l||c||c||c||c||c||c||c||c||c|}
 
-\hline Author (year) & CAT1 & CAT2 & CAT3 & CAT4 & CAT5 & CAT6 & CAT7 & Count &
-Ref. \\ \hline Sutton (2000) & X & X & X & X & X & X & X & 7 & \cite{Sutton2000}
-\\ Kajko-Mattson (2008) & X & X & X & X & X & X & X & 7 &  \cite{Kajko-
-Mattsson2008} \\ Crowne (2002) & X & X & X & X & X & X & X & 7 &
-\cite{Crowne2002} \\ Coleman (2008) & X & X & X & X & X & X & X & 7 &
-\cite{Coleman2008a} \\ Coleman (2008) & X & X & X & X & X & X & X & 7 &
-\cite{Coleman2008} \\ Coleman (2007) & X & X & X & X & X & X & X & 7 &
-\cite{Coleman2007} \\ Carmel (1994) & X & X & X & X & X & X & X & 7 &
-\cite{Camel1994a} \\ Yoffie (1999) & X & X & X & X & X & X & & 6 &
-\cite{Yoffie1999} \\ Zettel (2001) & X & X & X & X & & & X & 5 &
-\cite{Zettel2001} \\ Jansen (2008) & X & & X & & X & X & X & 5 &
-\cite{Jansen2008} \\ Heitlager (2007) &  &  & X & X & X & X & X & 5 &
-\cite{Heitlager2007} \\ Deias (2002) & X & X & & X & X & X & & 5 & \cite{Deias}
-\\ Ambler (2002) & X & X &  &  & X & X & X & 5 & \cite{Ambler2002} \\ Wood
-(2005) & X &  & X  & X &  &  & X & 4 & \cite{Wood2005} \\ Tingling (2007) &  & X
-&  & X & X & X &  & 4 & \cite{Tingling2007} \\ Taipale (2010) & X & X &  & X & X
-&  &  & 4 & \cite{Taipale2010} \\ da Silva (2005) & X & X &  & X & X &  &  & 4 &
-\cite{Silva2005} \\ Mirel (2000) & X &  & X & X & X &  &  & 4 & \cite{Mirel2000}
-\\ Midler (2008) & X & X &  & X &  &  & X & 4 & \cite{Midler2008} \\ Tanabian
-(2005) & X &  &  & X &  &  & X  & 3 & \cite{Tanabian2005} \\ Stanfill (2007) & X
-&  &  &  & X &  & X & 3 & \cite{Stanfill2007} \\ Mater (2000) & X & X &  &  &  &
-X &  & 3 & \cite{Mater2000} \\ Kuvinka (2011) & X & X &  & X &  &  &  & 3 &
-\cite{Kuvinka2011} \\ Deakins (2005) & X & X &  & X &  &  &  & 3 &
-\cite{Deakins2005} \\ Yogendra (2002) & X & X &  &  &  &  &  & 2 &
-\cite{Yogendra2002} \\ Wall (2001) & X &  &  &  &  &  & X & 2 & \cite{Wall2001}
-\\ Su-Chuang (2007) & X &  &  & X &  &  &  & 2 & \cite{Su-Chan2007} \\ Steenhuis
-(2008) &  &  &  & X &  &  & X & 2 & \cite{Steenhuis2008} \\ Sau-ling Lai (2010)
-&  & X &  &  &  &  & X & 2 & \cite{Lai2010} \\ Kakati (2003) &  & X &  & X &  &
-&  & 2 & \cite{Kakati2003} \\ Himola (2003) & X &  &  &  &  &  & X & 2 &
-\cite{Hilmola2003} \\ H\"{a}sel (2010) & X &  &  & X &  &  &  & 2 &
-\cite{Hasel2010} \\ Hanna (2010) & X &  &  &  &  &  & X  & 2 & \cite{Hanna2010}
-\\ Bean (2005) & X &  &  &  & X &  &  & 2 & \cite{Bean2005} \\ Kim (2005) &  & X
-&  &  &  &  &  & 1 & \cite{Kim2005} \\ Fayad (1997) &  &  &  & X &  &  &  & 1 &
-\cite{Fayad1997} \\ Chorev (2006) &  &  &  & X &  &  &  & 1 & \cite{Chorev2006}
-\\ \hline Count & 29 & 22 & 13 & 26 & 18 & 14 & 20 & &\\ %MUN: add a row which
-shows the sum of each column. This shows how much  %categories are covered
-overall %CG: fixed \hline \end{tabular} \end{table*}
+\hline
+Author (year) & CAT1 & CAT2 & CAT3 & CAT4 & CAT5 & CAT6 & CAT7 & Count & Ref. \\
+\hline
+Sutton (2000) & X & X & X & X & X & X & X & 7 & \cite{Sutton2000} \\
+Kajko-Mattson (2008) & X & X & X & X & X & X & X & 7 &
+\cite{Kajko-Mattsson2008} \\
+Crowne (2002) & X & X & X & X & X & X & X & 7 & \cite{Crowne2002} \\
+Coleman (2008) & X & X & X & X & X & X & X & 7 & \cite{Coleman2008a} \\
+Coleman (2008) & X & X & X & X & X & X & X & 7 & \cite{Coleman2008} \\
+Coleman (2007) & X & X & X & X & X & X & X & 7 & \cite{Coleman2007} \\
+Carmel (1994) & X & X & X & X & X & X & X & 7 & \cite{Camel1994a} \\
+Yoffie (1999) & X & X & X & X & X & X & & 6 & \cite{Yoffie1999} \\
+Zettel (2001) & X & X & X & X & & & X & 5 & \cite{Zettel2001} \\
+Jansen (2008) & X & & X & & X & X & X & 5 & \cite{Jansen2008} \\
+Heitlager (2007) & & & X & X & X & X & X & 5 & \cite{Heitlager2007} \\
+Deias (2002) & X & X & & X & X & X & & 5 & \cite{Deias} \\
+Ambler (2002) & X & X & & & X & X & X & 5 & \cite{Ambler2002} \\
+Wood (2005) & X & & X & X & & & X & 4 & \cite{Wood2005} \\
+Tingling (2007) & & X & & X & X & X & & 4 & \cite{Tingling2007} \\
+Taipale (2010) & X & X & & X & X & & & 4 & \cite{Taipale2010} \\
+da Silva (2005) & X & X & & X & X & & & 4 & \cite{Silva2005} \\
+Mirel (2000) & X & & X & X & X & & & 4 & \cite{Mirel2000} \\
+Midler (2008) & X & X & & X & & & X & 4 & \cite{Midler2008} \\
+Tanabian (2005) & X & & & X & & & X & 3 & \cite{Tanabian2005} \\
+Stanfill (2007) & X & & & & X & & X & 3 & \cite{Stanfill2007} \\
+Mater (2000) & X & X & & & & X & & 3 & \cite{Mater2000} \\
+Kuvinka (2011) & X & X & & X & & & & 3 & \cite{Kuvinka2011} \\
+Deakins (2005) & X & X & & X & & & & 3 & \cite{Deakins2005} \\
+Yogendra (2002) & X & X & & & & & & 2 & \cite{Yogendra2002} \\
+Wall (2001) & X & & & & & & X & 2 & \cite{Wall2001} \\
+Su-Chuang (2007) & X & & & X & & & & 2 & \cite{Su-Chan2007} \\
+Steenhuis (2008) & & & & X & & & X & 2 & \cite{Steenhuis2008} \\
+Sau-ling Lai (2010) & & X & & & & & X & 2 & \cite{Lai2010} \\
+Kakati (2003) & & X & & X & & & & 2 & \cite{Kakati2003} \\
+Himola (2003) & X & & & & & & X & 2 & \cite{Hilmola2003} \\
+H\"{a}sel (2010) & X & & & X & & & & 2 & \cite{Hasel2010} \\
+Hanna (2010) & X & & & & & & X & 2 & \cite{Hanna2010} \\
+Bean (2005) & X & & & & X & & & 2 & \cite{Bean2005} \\
+Kim (2005) & & X & & & & & & 1 & \cite{Kim2005} \\
+Fayad (1997) & & & & X & & & & 1 & \cite{Fayad1997} \\
+Chorev (2006) & & & & X & & & & 1 & \cite{Chorev2006} \\
+\hline
+Count & 29 & 22 & 13 & 26 & 18 & 14 & 20 & &\\
+%MUN: add a row which shows the sum of each column. This shows how much
+%categories are covered overall %CG: fixed
+\hline
+\end{tabular}
+\end{table*}
 
 Only 7 studies out of 37, discuss aspects related to the overall software
 development process in early stage startups. The remaining part of the studies
 is only partially covering the phenomenon described by the GSM. Looking at the
 papers' main contribution%MUN: which results? The papers' main contribution
-%or...? %CG: fixed , we were able to extrapolate information which confirmed the
-GSM categories.
+%or...? %CG: fixed 
+, we were able to extrapolate information which confirmed the GSM categories.
 
 We can see how the majority of the retrieved studies (29) mention issues
 related to \textit{speed-up development} (CAT1) which confirms the importance of
@@ -2152,8 +2378,9 @@ studies in SE (Cooper \cite{Cooper1986}, DeMarco \cite{peopleware-demarco1999},
 Coleman \cite{Coleman2004}, Valtanen \cite{Valtanen2008},  Adolph
 \cite{Adolph2011} and Cockburn \cite{people-first-order}), advocating for the
 need of empowering people, which is the element with the greatest impact on
-software development. Humans, being non-linear variables \cite{Human} %MUN: add
-ref %CG:fixed , are unlikely to follow repeatable prescriptive methodologies. As
+software development. Humans, being non-linear variables \cite{Human} 
+%MUN: add ref %CG:fixed
+, are unlikely to follow repeatable prescriptive methodologies. As
 stated by  Highsmith \cite{Highsmith2000}, \textit{``A drawback of each and
 every  methodology is to expect people to behave consistently over time, when is
 clearly not like that''}. Especially in early-stage startups, where the whole
@@ -2192,30 +2419,33 @@ start to grow the accumulated technical debt which requires fast integration of
 more structured and standard processes overtime. Issues related to low-precision
 engineering practices during companies' growth  are discussed in an experience
 paper by Ambler \cite{Ambler2002}. He reports on  two case studies of growing
-Internet startups approaching an initial public   offering (IPO). %MUN:explain
-%acronym %CG: fixed Despite the two companies were facing business and team
-growth, attitudes  against the introduction of processes to structure and model
-the system were  evident. The need to re-engineer the codebase lead the
-researchers to suggest a  tailored version of the Rational Unified Process (RUP)
+Internet startups approaching an initial public offering (IPO). %MUN:explain
+%acronym %CG: fixed 
+Despite the two companies were facing business and team growth, attitudes  
+against the introduction of processes to structure and model the system were  
+evident. The need to re-engineer the codebase lead the researchers to suggest a 
+tailored version of the Rational Unified Process (RUP)
 %MUN: add reference %CG: not fixed, not sure if needed since Ambler has the
-detailed  %explaination of his process, similar to RUP... anyway a dedicated
-resource  %would be an IBM website development framework. Nevertheless, even
-with the aid of CASE  tools\footnote{CASE tools are a class of software that
-automates many of the  activities involved in various engineering activities.
+%detailed explaination of his process, similar to RUP... anyway a dedicated
+%resource would be an IBM website
+development framework. Nevertheless, even with the aid of CASE  
+tools\footnote{CASE tools are a class of software that automates many of the  
+activities involved in various engineering activities.
 See  \url{http://www.unl.csi.cuny.edu/faqs/software-enginering/tools.html} .},
 startups failed in practicing engineering activities in view of excessive lack
 of  flexibility. Developers fast moved to simpler tools such as using a white-
 board,  where they were able to provide input and insights, question
 assumptions, share  past experiences, and even talk about potential
-implementation strategies.  %MUN: Candidate for removal since details can be
-found in Ambler anyway: "In  %general the development remained highly iterative,
-where project teams started  %to have a little modeling and testing only when
-necessary. They didn't take  %the serial approach of completely developing and
-accepting the requirements  %model, analysis model and so on. This let them
-react swiftly and adapt  %rapidly according to changes into their highly
-competitive markets. The  %researchers report \textit{``modeling was
-streamlined''}, that is modeling  %what was needed and go straightforward to
-coding, avoiding analysis  %paralysis." %CG: ok
+implementation strategies.  
+%MUN: Candidate for removal since details can be found in Ambler anyway: "In  
+%general the development remained highly iterative, where project teams started 
+%to have a little modeling and testing only when necessary. They didn't take  
+%the serial approach of completely developing and accepting the requirements  
+%model, analysis model and so on. This let them react swiftly and adapt  
+%rapidly according to changes into their highly competitive markets. The  
+%researchers report \textit{``modeling was streamlined''}, that is modeling  
+%what was needed and go straightforward to coding, avoiding analysis  
+%paralysis." %CG: ok
 
 %------------------------------------------------------------------------------%
 \subsubsection{Minimal project management}
@@ -2241,27 +2471,29 @@ they designed a process improvement model, based on three main phases: Evaluate,
 Plan and Change.
 
 %MUN: the whole paragraph needs to be summarized to its essence. Details can be
-%read in the referred paper.  %CG: partially fixed, removed the detailed process
-description In the evaluation phase, the status of the development workflow
+%read in the referred paper.  
+%CG: partially fixed, removed the detailed process description 
+In the evaluation phase, the status of the development workflow
 within the  company  is analyzed. The researchers documented a state of chaos
 where any  initiatives of quantitative methodology assessment would have been a
 waste of  time. Therefore, they applied a qualitative methodology to define a
-model of the  release management process.  %They moved towards the plan phase
-where the  %researchers decided to develop a model to manage releases,
-introducing a process  %composed by: release scope preparation, release
-planning, release development,  %system testing, acceptance testing and release
-deployment.  Despite the effort spent by the researchers to establish a
-development workflow,  practices were not fully conducted even though some
-marginal benefits have been  reported: planned major release from four to six
-months; planned minor releases  from two to four weeks; encompassing urgent
-corrective releases from one to five  days.  Regarding the previously mentioned
-problems, only  partial improvements have been achieved since the major obstacle
-was to  motivate employees to change their habits. With perfect hindsight the
-researchers claim that understanding and adapting solutions by solving one
-problem at a time would have increased the benefits. Then, despite the reported
-results, starting the establishment of a simple and informal workflow aided the
-organization to move from the stage of knowing nothing to knowing at least
-something about their development process.
+model of the  release management process.  
+%They moved towards the plan phase where the  %researchers decided to develop a 
+%model to manage releases, introducing a process composed by: release scope 
+%preparation, release planning, release development, system testing, 
+%acceptance testing and release deployment.  
+Despite the effort spent by the researchers to establish a development workflow, 
+practices were not fully conducted even though some marginal benefits have been 
+reported: planned major release from four to six months; planned minor releases 
+from two to four weeks; encompassing urgent corrective releases from one to five 
+days.  
+Regarding the previously mentioned problems, only  partial improvements have 
+been achieved since the major obstacle was to  motivate employees to change 
+their habits. With perfect hindsight the researchers claim that understanding 
+and adapting solutions by solving one problem at a time would have increased 
+the benefits. Then, despite the reported results, starting the establishment of 
+a simple and informal workflow aided the organization to move from the stage of 
+knowing nothing to knowing at least something about their development process.
 
 The integration of minimal project management during the development activities
 can foster the control over development productivity and control the
@@ -2269,13 +2501,14 @@ can foster the control over development productivity and control the
 to the development workflow status within the company, designing specific and
 tailored solutions.
 
-%MUN: To which category does the following paragraph belong?  %CG: they
-represent subcategories of speed-up development  Eventually to externalize
-complexity of the developing product %MUN: solutions on what? CG: fixed , two
-other studies \cite{Wall2001, Bean2005} suggest to \textit{``reuse the  wheel,
-instead of reinventing it''}, taking advantage of open source software  whenever
-it is possible, building systems quickly and effectively as a result.  Even
-though the principles in leading-edge development processes are the same
+%MUN: To which category does the following paragraph belong?  
+%CG: they represent subcategories of speed-up development  
+Eventually to externalize complexity of the developing product 
+%MUN: solutions on what? CG: fixed 
+, two other studies \cite{Wall2001, Bean2005} suggest to \textit{``reuse the  
+wheel, instead of reinventing it''}, taking advantage of open source software  
+whenever it is possible, building systems quickly and effectively as a result.  
+Even though the principles in leading-edge development processes are the same
 principles of yesteryear, the way in which the fundamentals are applied has
 changed from prescriptive to agile solutions, with less concern on quality
 aspects, also confirmed by Mater \cite{Mater2000}.
@@ -2283,9 +2516,10 @@ aspects, also confirmed by Mater \cite{Mater2000}.
 %------------------------------------------------------------------------------%
 \subsubsection{Simple workflows} Prescribed development models, oriented towards
 SPI, are basically ignored by  startups, as discussed in \cite{Zettel2001}.
-%MUN: <-- rephrase, not clear to me %CG:fixed To overcome the need of structure
-and to accelerate the development process,  Zettel developed a
-\textit{``LIghtweight Process for E-business software  development''} (LIPE).
+%MUN: <-- rephrase, not clear to me %CG:fixed 
+To overcome the need of structure and to accelerate the development process,  
+Zettel developed a \textit{``LIghtweight Process for E-business software  
+development''} (LIPE).
 This lightweight development method integrates the XP  approach with ideas from
 areas of software measurement for project control and  process improvement as a
 compromise between an ad-hoc and a more rigorous  approach. Zettel argues that
@@ -2300,16 +2534,17 @@ during a fieldwork with a developer team that had limited resources managing an
 innovative product in volatile e-commerce environment. This methodology
 represents a fast evolutionary approach with flexible processes.  It aims to
 obtain customer's feedback as soon as possible for continuous  product
-improvement.%MUN: %<-- rephrase, sentence not parsable CG:fixed Even in this
-case, the spiral methodology%MUN: which model? CG:fixed is compliant with the
-nature of a random, ad-hoc and  \textit{evolutionary  development approach}
-(CAT2). Evolutionary development approaches are  typically more suitable for web
-applications, as confirmed in  \cite{Deshpande2001}. Moreover, they provide
-practices oriented towards rapid and iterative design  with complete freedom to
-the developer team, enabled to operate anywhere within  the organization. %MUN:
-<-- the whole paragraph is not that clear to me. Try to start  %with the
-category (team is catalyst), then write about Deakins spiral model %CG:
-partially fixed, the focus here is on the evolutionary development approach
+improvement.%MUN: %<-- rephrase, sentence not parsable CG:fixed 
+Even in this case, the spiral methodology%MUN: which model? CG:fixed 
+is compliant with the nature of a random, ad-hoc and  \textit{evolutionary  
+development approach} (CAT2). Evolutionary development approaches are  
+typically more suitable for web applications, as confirmed in  
+\cite{Deshpande2001}. Moreover, they provide practices oriented towards rapid 
+and iterative design with complete freedom to the developer team, enabled to 
+operate anywhere within the organization. 
+%MUN: <-- the whole paragraph is not that clear to me. Try to start  
+%with the category (team is catalyst), then write about Deakins spiral model 
+%CG: partially fixed, the focus here is on the evolutionary development approach
 
 %------------------------------------------------------------------------------%
 \subsubsection{Full-stack development team}
@@ -2363,23 +2598,27 @@ those variables which and have not been considered in the model and might
 interfere with the theoretical framework positively or negatively
 \cite{ColinRobson2009}. We report those factors that have been explicitly
 identified by the SMS \cite{SMS} %MUN: do you mean the SMS? Then refer to it.
-%CG: fixed  %I remember you mentioned CF in the results (GSM), maybe also refer
-to the  %respective sections CG: not parsed. %MUN1: me neither... forget what I
-wrote :-). CG: ok , related to: creativity and innovation, market requirements
-and application  type, and developer experience.
+%CG: fixed  
+%I remember you mentioned CF in the results (GSM), maybe also refer to the  
+%respective sections CG: not parsed. 
+%MUN1: me neither... forget what I wrote :-). CG: ok 
+, related to: creativity and innovation, market requirements and application  
+type, and developer experience.
 
 %MUN: Again, structure this into subsubsections according to the above factors.
-%I did it, but check if you agree... \subsubsection{Creativity and innovation}
+%I did it, but check if you agree... 
+\subsubsection{Creativity and innovation}
 Heitlager et al. \cite{Heitlager2007} contributed to the investigation of
-creativity and innovation in startups.  %MUN: the rest of this paragraph is too
-detailed. I'd remove this "The study  %reports how development approaches
-oriented to the product in the early-stage  %life-cycle, called \textit{fluid}
-have main impact to innovative solutions  %initially. After a while the need of
-structuring and controlling the growing  %company size (along with
-\textit{transition} and \textit{specific} phases)  %arises the need of project
-management activities and software processes for  %long-term scalability
-issues."  CG: ok. %MUN: Please reformulate the first sentence, I cannot parse
-it. CG: fixed The proposed model identifies the three lifecycle stages of a
+creativity and innovation in startups.  
+%MUN: the rest of this paragraph is too detailed. I'd remove this "The study  
+%reports how development approaches oriented to the product in the early-stage  
+%life-cycle, called \textit{fluid} have main impact to innovative solutions  
+%initially. After a while the need of structuring and controlling the growing  
+%company size (along with \textit{transition} and \textit{specific} phases)  
+%arises the need of project management activities and software processes for  
+%long-term scalability issues."  CG: ok. 
+%MUN: Please reformulate the first sentence, I cannot parse it. CG: fixed 
+The proposed model identifies the three lifecycle stages of a
 startup:  \textit{fluid}, \textit{transition} and \textit{specific}. At each
 stage, the  model presents different development approaches (product-oriented
 and  process-oriented), according to the level of innovation achieved. The study
@@ -2395,40 +2634,44 @@ considered in this model, the integration of results would have been
 straightforward, since it is compliant with the description of how the
 \textit{accumulated technical debt} (CAT5) causes the need of establishing a
 process in the long run (see how the \textit{initial growth hinders performance}
-(CAT6)). %MUN: not clear to me what you mean by "evolution  %of this model" and
-what "compliant with our assumption" means. Also, don't use  %only CATx in this
-context, but cite the category name AND CATx. CG: fixed From the \textit{fluid}
-phase to the \textit{specific} phase, the innovation  confounding factor seems
-to behave initially the same as the \textit{speed-up  development}, both highly
-focused towards a product-oriented development.  %MUN: <-- please provide some
-motivation... not obvious. CG: fixed Nevertheless, we were unable to ground
-these evidences in the GT data even  though those are factors that might be
-positively correlated  %MUN: "present strict correlation" %What does that mean,
-I don't understand.  %CG: fixed. to the choice of an early product-development
-orientation and the need of  low-precision engineering elements.
+(CAT6)). %MUN: not clear to me what you mean by "evolution  
+%of this model" and what "compliant with our assumption" means. Also, don't use 
+%only CATx in this context, but cite the category name AND CATx. CG: fixed 
+From  the \textit{fluid} phase to the \textit{specific} phase, the innovation  
+confounding factor seems to behave initially the same as the \textit{speed-up  
+development}, both highly focused towards a product-oriented development.  
+%MUN: <-- please provide some motivation... not obvious. CG: fixed 
+Nevertheless, we were unable to ground these evidences in the GT data even  
+though those are factors that might be positively correlated
+%MUN: "present strict correlation" %What does that mean, I don't understand.  
+%CG: fixed. 
+to the choice of an early product-development orientation and the need of  
+low-precision engineering elements.
 
-\subsubsection{Market requirements and application type}  Market requirements
-\cite{Coleman2007} and application type \cite{Sutton2000,  Coleman2008,
-Coleman2008a} are two further potential confounding factors to the  GSM. Their
-main impact is related to the adoption of flexible and reactive  solutions for
-the development process. In particular, they refer to the  necessity of
-fulfillment of quality concerns that goes beyond scalability and UX  defined by
-the GSM. Especially when requirements are rigidly imposed or the  application
-domain is well-known, providing low-quality products to final users  might
-determine the failure of a startup.
+\subsubsection{Market requirements and application type}  
+Market requirements \cite{Coleman2007} and application type \cite{Sutton2000,  
+Coleman2008,Coleman2008a} are two further potential confounding factors to the  
+GSM. Their main impact is related to the adoption of flexible and reactive  
+solutions for the development process. In particular, they refer to the  
+necessity of fulfillment of quality concerns that goes beyond scalability and UX 
+defined by the GSM. Especially when requirements are rigidly imposed or the  
+application domain is well-known, providing low-quality products to final users 
+might determine the failure of a startup.
 
 For example, safety-critical systems possess quality concerns that must be
 considered. Even in e-commerce systems factors related to quality have  high-
-impact effects on obtaining the first customer reference,  %MUN: <-- cannot
-parse it. Remove the first part and write: "Even e-commerce  %systems...". Then
-rephrase the second part of the sentence to make it clearer.  %CG: fixed as
-discussed in \cite{Deakins2005,Kim2005,Silva2005}. Quality attributes
-especially %MUN: what is "this"? CG: fixed characterize those applications,
-whose part of functionalities are already  successfully implemented in other
-software systems or whose failure might  inflict serious financial or social
-damages \cite{Bass2003}. Yet, limiting our  context to early-stage software
-startups, which typically develop first  cutting-edge products in beta versions,
-partially mitigates the high quality  demands of users.
+impact effects on obtaining the first customer reference,  
+%MUN: <-- cannot parse it. Remove the first part and write: "Even e-commerce  
+%systems...". Then rephrase the second part of the sentence to make it clearer. 
+%CG: fixed 
+as discussed in \cite{Deakins2005,Kim2005,Silva2005}. Quality attributes
+especially %MUN: what is "this"? CG: fixed 
+characterize those applications, whose part of functionalities are already  
+successfully implemented in other software systems or whose failure might  
+inflict serious financial or social damages \cite{Bass2003}. Yet, limiting our  
+context to early-stage software startups, which typically develop first  
+cutting-edge products in beta versions, partially mitigates the high quality  
+demands of users.
 
 %MUN: The following 4 paragraphs explain how you use the Kano model to position
 %startups w.r.t. customer expectations and quality concerns. It's ok, but it
@@ -2470,11 +2713,13 @@ partially mitigates the high quality  demands of users.
 %from those situations where quality concerns cannot be  postponed or
 %externalized. CG: ok
 
-\subsubsection{Developer experience}  %MUN: Ups, a confounding factor you did
-not mention initially. Add it...  %CG: fixed Finally, also the experience of
-team-members is considered as an important  confounding factor. Since only
-little evidence has been gathered during the  interviews, ``lack of experience''
-was not considered as a sub-category in  \textit{severe lack of resources}.
+\subsubsection{Developer experience}  
+%MUN: Ups, a confounding factor you did not mention initially. Add it...  
+%CG: fixed 
+Finally, also the experience of team-members is considered as an important  
+confounding factor. Since only little evidence has been gathered during the  
+interviews, ``lack of experience'' was not considered as a sub-category in  
+\textit{severe lack of resources}.
 Nevertheless, startups rely at the beginning  on clever, but inexperienced
 developers \cite{Crowne2002}. Having team-members  with deep experience is a
 ``double-edge sword'' \cite{Yoffie1999}. On one hand,  experience might quickly
@@ -2501,16 +2746,16 @@ necessity of operating with solutions that let  the company move faster.
 %MUN: explain in the research method section (new section on how you performed
 %validation), exactly how you did static validation and what statistical
 %methods you used on what data, then refer to that section from here (no need
-%to repeat again here). CG: fixed In this subsection we validate the most
-important causal relations presented in  our model by attesting their
-correctness  with a quantification of empirical  trends observed in the
-interview data.  %MUN1: The following is part of the method and should be in
-3.5: "We identify  %trends and recurrent patterns by thoroughly analyzing and
-synthesizing the  %complete set of data obtained from the case study on which
-the GSM is built  %upon. We illustrate our observations aided by simple
-statistical methods,  %providing researchers an additional tool, supported by
-further companies'  %data, to validate our model." CG: not important, I would
-not add this.
+%to repeat again here). CG: fixed 
+In this subsection we validate the most important causal relations presented in 
+our model by attesting their correctness  with a quantification of empirical  
+trends observed in the interview data.  
+%MUN1: The following is part of the method and should be in 3.5: "We identify  
+%trends and recurrent patterns by thoroughly analyzing and synthesizing the  
+%complete set of data obtained from the case study on which the GSM is built  
+%upon. We illustrate our observations aided by simple statistical methods,  
+%providing researchers an additional tool, supported by further companies'  
+%data, to validate our model." CG: not important, I would not add this.
 
 We argued in section \ref{res:gsm:frmov}, that the most essential feature
 startups aim to achieve is high speed. As illustrated in Figure \ref{fig:gsm},
@@ -2520,14 +2765,16 @@ development approach (provides \textit{effectiveness}); and finally the
 intrinsic characteristics of the team (guarantee \textit{performance}).
 
 %MUN: for the paragraphs below, you need to explain what and why you do this.
-%CG: fixed, explained in methodology  %What do you mean by "we grounded in the
-interview transcripts the fact that  %those relations were characterized in
-terms of performances since  %time-to-market was the main concern." Not clear to
-me.  %CG: fixed, performance for us is efficiency AND effectiveness Before
-starting the evaluation of the impact of the three categories on  \textit{speed-
-up development}, we grounded in the interview transcripts the fact  that those
-relations were characterized in terms of "effectiveness" and  "efficiency" since
-time-to-market was the main concern (as confirmed in  \cite{SMS}):
+%CG: fixed, explained in methodology  
+%MUN:What do you mean by "we grounded in the interview transcripts the fact that 
+%those relations were characterized in terms of performances since  
+%time-to-market was the main concern." Not clear to me.  
+%CG: fixed, performance for us is efficiency AND effectiveness 
+Before starting the evaluation of the impact of the three categories on  
+\textit{speed-up development}, we grounded in the interview transcripts the fact 
+that those relations were characterized in terms of "effectiveness" and  
+"efficiency" since time-to-market was the main concern (as confirmed in  
+\cite{SMS}):
 
 \begin{compactitem} \item The team enhances the overall \textit{performance} of
 software  development. Recalling that startups deal with severe lack of
@@ -2556,29 +2803,31 @@ debt}, which will finally contribute to hinder performance in later stages.
 
 
 Accordingly, by analyzing the data of the 13 companies, we formulated two
-hypotheses which further describe the above illustrated relations: %MUN: You
-need to be more precise with terminology. Above you state that the  %two items
-below are "trends which further empower relations", but then,  %further below,
-you write "to assess these hypotheses". Observed trends !=  %Hypotheses. This is
-also why you need to be extremely explicit and precise  %when explaining what
-the a) aim, b) method, and c) outcome/result of this  %section is. I'm aware
-that it is difficult to boil down what you wrote in the  %thesis to this limited
-space, but I think it is doable (and relevant for  %supporting validity of GSM).
-CG: fixed
+hypotheses which further describe the above illustrated relations: 
+%MUN: You need to be more precise with terminology. Above you state that the  
+%two items below are "trends which further empower relations", but then,  
+%further below, you write "to assess these hypotheses". Observed trends !=  
+%Hypotheses. This is also why you need to be extremely explicit and precise  
+%when explaining what the a) aim, b) method, and c) outcome/result of this  
+%section is. I'm aware that it is difficult to boil down what you wrote in the  
+%thesis to this limited space, but I think it is doable (and relevant for  
+%supporting validity of GSM).
+%CG: fixed
 
-\begin{compactenum} \item The more a capable \footnote{The team capability is
+\begin{compactenum} 
+\item The more a capable \footnote{The team capability is
 evaluated according  to the characteristics presented in CAT4.} team, with few
 quality constraints,  uses an evolutionary approach, the faster the company
-releases the product. \item The faster the company releases the product, the
-larger the degree of  \textit{accumulated technical debt}\footnote{The debt here
-is considered  regardless of context-specific debt mitigation factors and
-tactics.}. \end{compactenum}
+releases the product. 
+\item The faster the company releases the product, the larger the degree of  
+\textit{accumulated technical debt}\footnote{The debt here is considered  
+regardless of context-specific debt mitigation factors and tactics.}. 
+\end{compactenum}
 
 To assess these hypotheses we defined three measures reflecting the theoretical
 model:
 
 \begin{compactitem}
-
 \item \textit{Execution speed}: a metric that represents the development speed
 of the startup during different phases of the first release, computed by means
 of a weighted average speed for each phase. It was obtained by analysing
@@ -2594,29 +2843,35 @@ startups growth.
 \item \textit{Potential capability}: a metric that represents the degree to
 which each company reflected the capability of reaction and flexibility to the
 dynamic environment during the development process, given by the three
-categories that mostly affect \textit{speed-up development}. \end{compactitem}
+categories that mostly affect \textit{speed-up development}. 
+\end{compactitem}
 
 
 We quantified these measures for each company involved in our empirical study
 by defining score metrics based on a set of rubrics and evaluating startups
 accordingly, through an analysis of interview transcripts, codes and
 questionnaire results. The complete statistical procedure and provided rubrics
-to quantify the measures are illustrated and discussed in Appendix. %MUN: make
-sure it is clear that the PROCEDURE material is available in the  %ONLINE
-appendix and refer to it. Still, you need to report the actual RESULTS  %of you
-statistical analysis here...  %CG: partially fixed. we always referred to
-appendix without references until  %now.
+to quantify the measures are illustrated and discussed in Appendix. 
+%MUN: make sure it is clear that the PROCEDURE material is available in the  
+%ONLINE appendix and refer to it. Still, you need to report the actual RESULTS  
+%of you statistical analysis here...  
+%CG: partially fixed. we always referred to appendix without references until  
+%now.
 
-%MUN1: I don't really understand why you add the second clause in H01  %"AND
-with less quality constraints" --> just makes the hypothesis more  %difficult to
-understand. CG: fixed. We conducted statistical tests  using the analysis of
+%MUN1: I don't really understand why you add the second clause in H01  
+%"AND with less quality constraints" --> just makes the hypothesis more  
+%difficult to understand. CG: fixed. 
+We conducted statistical tests  using the analysis of
 variance to assess the  existence of relations between the dimensions. First we
 defined two null  hypotheses:
 
-\begin{itemize} \item[$H0_1$:] \textit{Startups do not release the product
+\begin{itemize} 
+\item[$H0_1$:] \textit{Startups do not release the product
 faster  when a capable team adopts a more evolutionary approach AND with less
-quality  constraints} \item[$H0_2$:] \textit{The execution speed does not
-increase the amount  of accumulated technical debt}.  \end{itemize}
+quality  constraints} 
+\item[$H0_2$:] \textit{The execution speed does not
+increase the amount  of accumulated technical debt}.
+\end{itemize}
 
 The formulation of the two hypotheses reflects the representation of the
 categories related to \textit{speed-up development} presented in the GSM model
@@ -2625,9 +2880,10 @@ test using Pearson's product moment correlation  coefficient\footnote{To perform
 the Pearson's correlation we verified two  assumptions: a) data is normally
 distributed; b) data is on interval scale.},  with positive association
 analysis, fixing the level of confidence to 95\%. We reject both $H0_1$ and
-$H0_2$, and conclude that in our sample: \begin{compactenum} \item Higher values
-of \textit{Execution speed} are strongly associated  (p-value: 0.002) with
-higher values for \textit{Technical debt}.
+$H0_2$, and conclude that in our sample: 
+\begin{compactenum}
+\item Higher values of \textit{Execution speed} are strongly associated  
+(p-value: 0.002) with higher values for \textit{Technical debt}.
 
 \item Higher values of \textit{Execution speed} are  strongly associated
 (p-value: 0.005) with higher values for   \textit{Potential capability}.
@@ -2690,9 +2946,9 @@ Developing software without releasing it for a long period of time, coming up
 with very complex solutions often is not a viable option. Business demands,
 investors interests, market pressures and the general uncertain conditions force
 startups to quickly iterate on the product by exploring and experimenting new
-functionalities progressively rolled-out to early-adopters. %MUN1: Ok, I'm now
-"inventing" possible implications in the sections below...  %this is your job
-and you are much more qualified to do that than me :-)
+functionalities progressively rolled-out to early-adopters. 
+%MUN1: Ok, I'm now "inventing" possible implications in the sections below...  
+%this is your job and you are much more qualified to do that than me :-)
 
 %MUN1:Do we (research) know enough about how to shorten time-to-market without
 %accumulating technical debt? What are possible venues for research? CG: fixed
@@ -2700,17 +2956,17 @@ and you are much more qualified to do that than me :-)
 
 
 %------------------------------------------------------------------------------%
-\subsection{Light-weight methodology} Startups do not apply any standard
-development methodology. When focused  on building the first version of the
-product, startups do not observe any  specific and standard development
-methodologies or processes.  From an accurate  and in-depth investigation into
-daily activities, it emerged that the number of   the observed development
-\textit{practices} is extremely small and never  systematic (only little
-\textit{pair programming} sessions and rarely  \textit{test driven
-development}). Despite the wide number of publications,  which discuss the
-adoption of lightweight methodologies, we have found that  especially in this
-first stage not only methodologies but even individual  practices are basically
-neglected.
+\subsection{Light-weight methodology} 
+Startups do not apply any standard development methodology. When focused  on 
+building the first version of the product, startups do not observe any  
+specific and standard development methodologies or processes.  From an accurate 
+and in-depth investigation into daily activities, it emerged that the number of 
+the observed development \textit{practices} is extremely small and never  
+systematic (only little \textit{pair programming} sessions and rarely  
+\textit{test driven development}). Despite the wide number of publications,  
+which discuss the adoption of lightweight methodologies, we have found that  
+especially in this first stage not only methodologies but even individual  
+practices are basically neglected.
 
 The closest development approach undertaken by early-stage startups is  the
 \textit{Lean startup methodology}.  A highly evolutionary development  approach,
@@ -2722,18 +2978,20 @@ they should set-up an experiment to \textit{test the riskiest  element of the
 business idea}, nor make explicit use of the suggested good  practices. Instead,
 startups in the early stage prefer also to apply fast cycles of "build and fix"
 when necessary, hacking the first functionalities to present to potential
-customers and investors in order to obtain quick feedbacks. %MUN1: Why don't
-follow startups the build-measure-learn cycle proposed by  %Ries? Well, naively
-I'd say that since he published in 2011, his ideas do not  %have yet transferred
-to industry... Any other reason you can think of? Is it  %still too heavyweight
-and in conflict with the highest priority of shorting  %time-to-market? Is Lean
-still to Heavy for startups (in their early phases)? CG:fixed. Moreover, when it
-comes to user feedback, startups do  not explicitly follow the step-by-step
-process of \textit{customer development} formally defined by Blank
-\cite{Blank2005}. Instead, startups absorb and  implement the high-level
-principles that outlines the customer development methodology%MUN1:<--  %which
-methodology? CG: fixed , reflected in the GSM by the theoretical category
-\textit{find the  product/market fit quickly}.
+customers and investors in order to obtain quick feedbacks. 
+%MUN1: Why don't follow startups the build-measure-learn cycle proposed by  
+%Ries? Well, naively I'd say that since he published in 2011, his ideas do not  
+%have yet transferred to industry... Any other reason you can think of? Is it  
+%still too heavyweight and in conflict with the highest priority of shorting  
+%time-to-market? Is Lean still to Heavy for startups (in their early phases)? 
+% CG:fixed. 
+Moreover, when it comes to user feedback, startups do  not explicitly follow 
+the step-by-step process of \textit{customer development} formally defined by 
+Blank \cite{Blank2005}. Instead, startups absorb and  implement the high-level
+principles that outlines the customer development methodology
+%MUN1:<--  %which methodology? CG: fixed 
+, reflected in the GSM by the theoretical category \textit{find the  
+product/market fit quickly}.
 
 %MUN1: paragraph below is candidate for removal The greatest part of engineering
 %activities of startups are focused on  the implementation while only little
@@ -2746,69 +3004,76 @@ methodology? CG: fixed , reflected in the GSM by the theoretical category
 %production is perceived as a waste  of time. CG: ok
 
 %------------------------------------------------------------------------------%
-\subsection{Focus on minimal set of functionalities} The first release of the
-product includes only a limited set of well  suitable functionalities focused on
-user experience. The beta version is usually  focused on a minimal and essential
-set of functionalities providing a reasonable  user experience (UX). The first
-functionalities are usually set by the founders and their experience in a
-particular business domain. As soon as possible they provide demos to
-demonstrate the idea to potential customers. %MUN1: This rises the question, how
-do startups prioritize requirements.  %There's abundant amount of literature on
-how to select/prioritize reqs., but  %do they work in startups? Are they also
-too heavyweight or could they be  %adopted by startups in a modified form in
-order to increase the probabilities  %of success in the market?. CG: fixed. As
-confirmed by practitioners, the user must be able to  accomplish a task on the
-product without major interruptions in the flow, which  would cause frustration
-before being able to capture his attention. To realize  UX in a short time
-frame, developers focus on a limited number of suitable  functionalities,
-especially in the first version(s) of the product. Other  product qualities are
-regarded as less important: for instance, obtaining a  high-reliability is not a
-priority since early adopters of innovative product  are keen to accept minor
-bugs in exchange of new functionalities\footnote{These  results further
-highlight differences between software development in startups  and traditional
-web engineering, where quality aspects are rated as very  important, even more
-than time-to-market \cite{Offutt2002}.}. From a business  perspective, one might
-argue that established companies might take advantage of  the new idea and
-develop a better version of the product internally. Despite this might represent
-a risk, established companies usually cannot  afford to operate in a market of
-\textit{innovators} and \textit{early adopters}  group of users - described by
-the Roger's bell curve in \cite{Rogers} - because  of the little return of
-investment they would gain, as discussed by Christensen  in
+\subsection{Focus on minimal set of functionalities} 
+The first release of the product includes only a limited set of well  suitable 
+functionalities focused on user experience. The beta version is usually  
+focused on a minimal and essential set of functionalities providing a reasonable 
+user experience (UX). The first functionalities are usually set by the 
+founders and their experience in a particular business domain. As soon as 
+possible they provide demos to demonstrate the idea to potential customers. 
+%MUN1: This rises the question, how do startups prioritize requirements.  
+%There's abundant amount of literature on how to select/prioritize reqs., but  
+%do they work in startups? Are they also too heavyweight or could they be  
+%adopted by startups in a modified form in order to increase the probabilities  
+%of success in the market?. CG: fixed. 
+As confirmed by practitioners, the user must be able to  accomplish a task on 
+the product without major interruptions in the flow, which  would cause 
+frustration before being able to capture his attention. To realize  UX in a 
+short time frame, developers focus on a limited number of suitable  
+functionalities, especially in the first version(s) of the product. Other  
+product qualities are regarded as less important: for instance, obtaining a  
+high-reliability is not a priority since early adopters of innovative product  
+are keen to accept minor bugs in exchange of new functionalities\footnote{These 
+results further highlight differences between software development in startups 
+and traditional web engineering, where quality aspects are rated as very  
+important, even more than time-to-market \cite{Offutt2002}.}. From a business  
+perspective, one might argue that established companies might take advantage of 
+the new idea and develop a better version of the product internally. Despite 
+this might represent a risk, established companies usually cannot  afford to 
+operate in a market of \textit{innovators} and \textit{early adopters}  group 
+of users - described by the Roger's bell curve in \cite{Rogers} - because  of 
+the little return of investment they would gain, as discussed by Christensen  in
 \cite{Christensen2003}. Instead, established companies have more interests  in
 acquiring a startup and all the knowledge it has gained during the
 \textit{customer development} process while focusing effort on acquiring larger
-shares of a ``mass market'' sector.  %MUN1: candidate for shorting %Furthermore,
-thanks to cloud computing and  %more in general high availability of third party
-components, aspects such as  %performance, security and scalability can be
-achieved with a reasonable  %effort.  %Thus, given the general lack of quality
-concerns, and supported by the fact  %that the optimal strategy to improve the
-UX is by having the product used by  %real customers, startups can effectively
-focus on achieving short  %time-to-market. CG: fixed
+shares of a ``mass market'' sector.  
+%MUN1: candidate for shorting 
+%Furthermore, thanks to cloud computing and more in general high availability 
+%of third party components, aspects such as performance, security and 
+%scalability can be achieved with a reasonable effort. Thus, given the 
+%general lack of quality concerns, and supported by the fact that the optimal 
+%strategy to improve the UX is by having the product used by real customers, 
+%startups can effectively focus on achieving short time-to-market. CG: fixed
 
 %------------------------------------------------------------------------------%
-\subsection{Empowering the team members} The founding team is the most important
-determinant of speed. More than  techniques and methodologies, the features of
-the team are the essential factors  to achieve high-development speed. Discussed
-in the theoretical category the  \textit{team is the catalyst of development},
-this result has been confirmed in  multiple occasions both in the interviews and
-in the questionnaires. What is  truly important for the startup, among other
-factors, is the extremely  high-colocation which enables continuous informal and
-colloquial coordination  and discussions.  %$MUN1: candidate for removal %The
-initial (small) development team usually spends most of the  %hours of the week
-working closely to implement the product, often extending  %the conventional
-office hours. CG: ok. The large amount of communication, spontaneously held in
-informal places, has  been proven to be an extremely effective element of
-several successful software projects \cite{Highsmith2000}. Hence, the vastly
-\textit{informal} development environment of startups acts as a catalyst of
-speed. %MUN1: candidate for removal %Other important elements, which contribute
-in achieving such an initial  %high-speed, are: minimal set of functionalities
-with low concerns on product  %quality; evolutionary prototyping approach; smart
-use of advanced tools and  %frameworks; low precision artifacts; and the close
-colocation and capability  %of the team. CG: ok.
+\subsection{Empowering the team members} 
+The founding team is the most important determinant of speed. More than  
+techniques and methodologies, the features of the team are the essential factors 
+to achieve high-development speed. Discussed in the theoretical category the  
+\textit{team is the catalyst of development}, this result has been confirmed in 
+multiple occasions both in the interviews and in the questionnaires. What is  
+truly important for the startup, among other factors, is the extremely  
+high-colocation which enables continuous informal and colloquial coordination  
+and discussions.  
+%$MUN1: candidate for removal 
+%The initial (small) development team usually spends most of the hours of the 
+%week working closely to implement the product, often extending  
+%the conventional office hours. CG: ok. 
+The large amount of communication, spontaneously held in informal places, has  
+been proven to be an extremely effective element of several successful software 
+projects \cite{Highsmith2000}. Hence, the vastly \textit{informal} development 
+environment of startups acts as a catalyst of speed. 
+%MUN1: candidate for removal 
+%Other important elements, which contribute in achieving such an initial  
+%high-speed, are: minimal set of functionalities with low concerns on product  
+%quality; evolutionary prototyping approach; smart use of advanced tools and  
+%frameworks; low precision artifacts; and the close colocation and capability  
+%of the team. CG: ok.
 
 %------------------------------------------------------------------------------%
-\subsection{Paying back the technical debt} The initial lack of structures and
-processes negatively affects the  performance when the company starts to grow.
+\subsection{Paying back the technical debt} 
+The initial lack of structures and processes negatively affects the  
+performance when the company starts to grow.
 One of the primary objectives of  startups is to expand their business into fast
 growing markets. If  successful, the company will face a growth in terms of
 number of customers,  employees and product capabilities. Then, the increased
@@ -2819,13 +3084,14 @@ team need to start returning  the accumulated technical debt. As reported by
 practitioners, introducing more  structures, documentation and standard
 procedures, cause an initial drop-down in  performance which severity depends on
 the speed of growth, the amount of  technical debt and the capacity of the team
-to absorb it.  %MUN1: what does literature say about technical debt? Are there
-strategies that  %maybe applicable to startups and if not why? Is there more
-research needed?  %Obviously, shortening time-to-market and preventing technical
-debt are two  %conflicting goals, but is there a chance to find a sweet spot
-where  %development speed can be balanced to achieve market success and still
-reducing  %the performance bump that hampers growth? CG: partially fixed below
-in summary.
+to absorb it.  
+%MUN1: what does literature say about technical debt? Are there strategies that 
+ %maybe applicable to startups and if not why? Is there more research needed?  
+%Obviously, shortening time-to-market and preventing technical debt are two  
+%conflicting goals, but is there a chance to find a sweet spot where  
+%development speed can be balanced to achieve market success and still reducing 
+%the performance bump that hampers growth? 
+%CG: partially fixed below in summary.
 
 
 
@@ -2859,9 +3125,9 @@ when the chaos has been initially managed, planning long-term performance by
 adoption of Agile and Lean development practices.
 
 %------------------------------------------------------------------------------%
-%\subsection{Future work} %label{futwork} %MUN: Don't have future work as a
-subsection in threats to validity. Either  %merge it in "Implications of the
-GSM" OR into "Conclusions". CG: fixed
+%\subsection{Future work} %label{futwork} 
+%MUN: Don't have future work as a subsection in threats to validity. Either  
+%merge it in "Implications of the GSM" OR into "Conclusions". CG: fixed
 
 %MUN1: The paragraph below does say little about future work but rather
 %presents the contributions of GSM. In "Future work" you should rather state
@@ -2883,12 +3149,13 @@ GSM" OR into "Conclusions". CG: fixed
 %market. CG: ok
 
 %------------------------------------------------------------------------------%
-\section{Threats to Validity} \label{valt} %MUN: Also here, introduce some
-structure: first, explain shortly what types of  %validity threats exist for the
-research methodology you applied. Then, discuss  %each type individually. Think
-about which threat type is the most prominent  %one for your research
-methodology and start with that one. I did not review  %this section in detail
-now since it will change considerably after your  %restructuring. %CG: fixed
+\section{Threats to Validity} \label{valt} 
+%MUN: Also here, introduce some structure: first, explain shortly what types of 
+%validity threats exist for the research methodology you applied. Then, discuss 
+%each type individually. Think about which threat type is the most prominent  
+%one for your research methodology and start with that one. I did not review  
+%this section in detail now since it will change considerably after your  
+%restructuring. %CG: fixed
 
 %MUN1: After reading the discussion on validity threats, I think you have chosen
 %the wrong framework (Wohlin) to discuss threats. His framework is  targeted at
@@ -2901,10 +3168,10 @@ now since it will change considerably after your  %restructuring. %CG: fixed
 %strategies. CG: to discuss since the ref of Yin and Runeson present very
 %similar validity threats.
 %------------------------------------------------------------------------------
-In this section we discuss the validity of the overall methodology. %MUN1:
-threats  %are discussed w.r.t. the research methodology, not the results... CG:
-fixed. We structure the discussion according to Wohlin's taxonomy
-\cite{Wohlin2000}.
+In this section we discuss the validity of the overall methodology. 
+%MUN1: threats  %are discussed w.r.t. the research methodology, not the 
+%results... CG: fixed. 
+We structure the discussion according to Wohlin's taxonomy \cite{Wohlin2000}.
 
 %MUN1: Ok, what I meant was, not to explain the 4 categories in *general*, but
 %to explain (shortly) their relevance w.r.t. GT. I guess my comment above was
@@ -2918,19 +3185,21 @@ fixed. We structure the discussion according to Wohlin's taxonomy
 %conditions, as distinguished from spurious relationships\footnote{A
 %\textit{spurious} relationship is a relationship in which two events have no
 %direct causal connection, but rather due to either a coincidence or the
-%presence of confounding factors.}. %\item Construct validity - which is
-enforced by clearly specifing operational  %procedures, and providing an
-adequate description of  %constructs\footnote{Constructs are complex ideas that
-we as humans form in  %order to summarize observations about things that we
-cannot see directly. For  %example a construct is \textit{``job satisfaction''},
-which to be defined,  %requires a higher level of abstraction than a concrete
-object(e.g. a book).}  %that are used to generate the theory. %\item Conclusion
-validity - which represent the degree to which conclusions  %are reasonable,
-according to the defined relationships in the data. It  %involves ensuring
-adequate sampling procedures, appropriate analytical methods  %and reliable
-measurement procedures. Reliability requires to demonstrate that  %the
-operations of a study - such as data collection procedures - can be  %repeated
-by other researchers, obtaining the same results. %\end{compactitem}
+%presence of confounding factors.}. 
+%\item Construct validity - which is enforced by clearly specifing operational  
+%procedures, and providing an adequate description of  
+%constructs\footnote{Constructs are complex ideas that we as humans form in  
+%order to summarize observations about things that we cannot see directly. For  
+%example a construct is \textit{``job satisfaction''}, which to be defined,  
+%requires a higher level of abstraction than a concrete object(e.g. a book).}  
+%that are used to generate the theory. 
+%\item Conclusion validity - which represent the degree to which conclusions  
+%are reasonable, according to the defined relationships in the data. It  
+%involves ensuring adequate sampling procedures, appropriate analytical methods 
+%and reliable measurement procedures. Reliability requires to demonstrate that  
+%the operations of a study - such as data collection procedures - can be  
+%repeated by other researchers, obtaining the same results. 
+%\end{compactitem}
 
 %------------------------------------------------------------------------------%
 \subsection{External validity}
@@ -2946,10 +3215,11 @@ no supporting evidence to  verify the opinion expressed. The questionnaire
 dedicated to ``data  triangulation'' was not of primary support because of the
 limited time  practitioners were able to grant to it. However, researchers have
 to accept the  veracity of what respondents reported during the interviews
-\cite{Coleman2008a}.  %MUN1: candidate for removal %Notwithstanding, the issues
-surrounding semi-structured interviews are vital.  %Within our study, although
-the reality might be different from what has been  %described, the reported data
-are CTOs' and CEOs' perception, which is used to  %base their decisions. CG: ok
+\cite{Coleman2008a}.  %MUN1: candidate for removal 
+%Notwithstanding, the issues surrounding semi-structured interviews are vital.  
+%Within our study, although the reality might be different from what has been  
+%described, the reported data are CTOs' and CEOs' perception, which is used to  
+%base their decisions. CG: ok
 
 The comparison of the GSM with similar frameworks helped in establishing the
 domain to which the study's findings can be generalized. In particular the
@@ -2959,15 +3229,17 @@ hinder maturing processes in startups. Moreover, we analyzed  Brook's framework
 describing the \textit{basic attacks} to the challenges of  developing software
 systems and other literature covered by the SMS on startups.
 \cite{SMS}\footnote{Note that the generalizability of results is applied only to
-those startups that operate in software-intensive activities.}.  %MUN1:
-candidate for removal: detail on RM / seems out of place %In conclusion,
-regarding the validation of  %the subcategories, a continuous re-evaluation of
-the interview transcripts has  %been performed. CG: ok
+those startups that operate in software-intensive activities.}.  
+%MUN1: candidate for removal: detail on RM / seems out of place 
+%In conclusion, regarding the validation of  
+%the subcategories, a continuous re-evaluation of the interview transcripts has 
+%been performed. CG: ok
 
 %------------------------------------------------------------------------------%
-\subsection{Internal validity} %Internal To enhance the internal validity, we
-created a three-dimensional research  framework. By means of a grounded theory
-approach, formed by a  \textit{systematic mapping study}, \textit{interviews}
+\subsection{Internal validity} %Internal 
+To enhance the internal validity, we created a three-dimensional research  
+framework. By means of a grounded theory approach, formed by a  
+\textit{systematic mapping study}, \textit{interviews}
 and \textit{follow-up  questionnaires}, we searched for convergence among
 different sources of  information to confirm the generated theory.
 
@@ -2981,58 +3253,61 @@ validity, generalizability, and theoretical level of the theory building from  a
 case study research [\ldots] because the findings often rest on a very limited
 number of cases.''
 
-%MUN1: candidate for shortening %Little ambiguities about direction of causal
-influences have been reduced by  %introducing arrows to indicate the direction
-of the causal relation in the GSM  %model. Furthermore, by means of comparison
-between the GSM model and extant  %studies in the broader fields, we revealed
-that the theory resembles in wider  %startup development context. CG: ok
+%MUN1: candidate for shortening 
+%Little ambiguities about direction of causal influences have been reduced by  
+%introducing arrows to indicate the direction of the causal relation in the GSM 
+%model. Furthermore, by means of comparison between the GSM model and extant  
+%studies in the broader fields, we revealed that the theory resembles in wider  
+%startup development context. CG: ok
 Nevertheless, we identified important confounding factors, related to
-innovation, market requirements and developer experience, which might  impact
+innovation, market requirements and developer experience, which might impact
 the internal validity of the GSM.
 
 %------------------------------------------------------------------------------%
-\subsection{Construct validity} %Construct One threat to this study is a
-possible inadequate description of constructs. In  order to diminish this risk,
-the entire study constructs have been adapted to  the terminology utilized by
-practitioners and defined at an adequate level for  each theoretical
-conceptualization. For instance, we defined \textit{Time  shortage} in terms of
-\textit{Investor pressure, CEO/business  pressure, Demo presentations at events
-and internal final deadline} as used by  most of the interviewees in the study.
+\subsection{Construct validity} %Construct 
+One threat to this study is a possible inadequate description of constructs. In 
+order to diminish this risk, the entire study constructs have been adapted to  
+the terminology utilized by practitioners and defined at an adequate level for  
+each theoretical conceptualization. For instance, we defined \textit{Time  
+shortage} in terms of \textit{Investor pressure, CEO/business  pressure, Demo 
+presentations at events and internal final deadline} as used by  most of the 
+interviewees in the study.
 Moreover, during the coding of interview transcripts, we adopted explanatory
 descriptive labels for theoretical categories, to capture the underlying
 phenomenon without losing relevant details.
 
 %MUN1: I get the threat, but I don't understand its mitigation: let the
-%interviewees drive the study?! Try to reformulate... CG: fixed. The second
-important threat is caused by the fact that interviewees might  already be aware
-of the possible emergent theories analyzed by researchers. To  reduce the risk
-that some hypothesis could have been involved in the design of  the research, we
-didn't disclose any goal and emergent results of our research to the
-interviewees.
+%interviewees drive the study?! Try to reformulate... CG: fixed. 
+The second important threat is caused by the fact that interviewees might  
+already be aware of the possible emergent theories analyzed by researchers. To  
+reduce the risk that some hypothesis could have been involved in the design of  
+the research, we didn't disclose any goal and emergent results of our research 
+to the interviewees.
 
 Another threat associated with construct validity is evaluation  apprehension,
 which describes people's rejection attitude towards the  assessment of their
 behavior.  To address this risk we didn't attained to first answers from
 practitioners, but  rather we asked for details of artifacts and engineering
-strategies. %MUN1: <--  %I don't understand this... CG: fixed %Moreover, we
-developed a rigorous data collection protocol to create case study  %databases
-and employ integration of multiple data collection methods.%MUN1: <--  %Since
-you write "Moreover, ..." the reader gets the impression that this is a
+strategies. %MUN1: <--  %I don't understand this... CG: fixed 
+Moreover, we developed a rigorous data collection protocol to create case study 
+databases and employ integration of multiple data collection methods.%MUN1: <-- 
+ %Since you write "Moreover, ..." the reader gets the impression that this is a
 %further mitigation strategy to evaluation apprehension. I don't see however
 %how this mitigates this risk. Fix... CG: right, removed because misleading.
 Reporting bias was mitigated by packaging all the needed  material for
 conducting new researches in other contexts in order to criticize  our findings
 (interview package with instructions has been made available
 online\footnote{Available at  \url{https://github.com/adv0r/BTH-Interview-
-Package}.}. %MUN1: --> What exactly  %is reporting bias? Let's assume that it
-means that you only report results,  %i.e. interviewee statements, that are
-favorable to your theory. How does  %publishing the auxiliary study material
-help to mitigate this risk? Publishing  %the raw data (what you not do) would
-only allow researchers to check the  %conclusions you made. The published
-auxiliary material helps to replicate the  %study, i.e. makes is possible to
-test your theory in a different context. CG: by this, we meant providing all the
-material to replicate the same study with other startups and compare the
-results. Moreover, two researchers not involved in the execution of the study
+Package}.}. %MUN1: --> What exactly  
+%is reporting bias? Let's assume that it means that you only report results,  
+%i.e. interviewee statements, that are favorable to your theory. How does  
+%publishing the auxiliary study material help to mitigate this risk? Publishing 
+%the raw data (what you not do) would only allow researchers to check the  
+%conclusions you made. The published auxiliary material helps to replicate the  
+%study, i.e. makes is possible to test your theory in a different context. 
+%CG: by this, we meant providing all the material to replicate the same study 
+%with other startups and compare the results. 
+Moreover, two researchers not involved in the execution of the study
 conducted  a peer-review analysis of the model's constructs.
 
 To control distortion during analysis we made extensive use of memos. To
@@ -3052,9 +3327,11 @@ between sampling and analysis should be verified in such a way that emerging
 findings remain consistent as further data are collected. To attest this, we
 explored and tested:
 
-\begin{compactitem} item Each category and the strength of relations between
-\them. item Hypotheses, derived from and related to the emergent theory. item
-\Deviant cases to ensure robustness and general applicability. end{compactitem}
+\begin{compactitem} 
+  \item Each category and the strength of relations between them. 
+  \item Hypotheses, derived from and related to the emergent theory. 
+  \item Deviant cases to ensure robustness and general applicability. 
+\end{compactitem}
 
 In particular we were prepared to modify generated categories so that the new
 data could be adapted into the emerging theory according to the concepts of
@@ -3094,81 +3371,21 @@ investigation.
 
 
 %------------------------------------------------------------------------------%
-%\subsection{Subsection Heading Here} %Subsection text here.
 
-% needed in second column of first page if using \IEEEpubid %\IEEEpubidadjcol
-
-%\subsubsection{Subsubsection Heading Here} %Subsubsection text here.
-
-
-% An example of a floating figure using the graphicx package. % Note that \label
-must occur AFTER (or within) \caption. % For figures, \caption should occur
-after the \includegraphics. % Note that IEEEtran v1.7 and later has special
-internal code that % is designed to preserve the operation of \label within
-\caption % even when the captionsoff option is in effect. However, because % of
-issues like this, it may be the safest practice to put all your % \label just
-after \caption rather than within \caption{}. % % Reminder: the "draftcls" or
-"draftclsnofoot", not "draft", class % option should be used if it is desired
-that the figures are to be % displayed while in draft mode. %
-
-
-% Note that IEEE CS typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats. However,
-% the Computer Society has been known to put floats at the bottom.
-
-
-% An example of a double column floating figure using two subfigures. % (The
-subfig.sty package must be loaded for this to work.) % The subfigure \label
-commands are set within each subfloat command, the % \label for the overall
-figure must come after \caption. % \hfil must be used as a separator to get
-equal spacing. % The subfigure.sty package works much the same way, except
-\subfigure is % used instead of \subfloat. % %\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}} %\hfil %\subfloat[Case
-II]{\includegraphics[width=2.5in]{subfigcase2}% %\label{fig_second_case}}}
-%\caption{Simulation results} %\label{fig_sim} %\end{figure*} % % Note that
-often IEEE CS papers with subfigures do not employ subfigure % captions (using
-the optional argument to \subfloat), but instead will % reference/describe all
-of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the  %
-\caption command should come BEFORE the table. Table text will default to %
-\footnotesize as IEEE normally uses this smaller font for tables. % The \label
-must come after \caption as always. % %\begin{table}[!t] %% increase table row
-spacing, adjust to taste %\renewcommand{\arraystretch}{1.3} % if using
-array.sty, it might be a good idea to tweak the value of % \extrarowheight as
-needed to properly center the text within the cells %\caption{An Example of a
-Table} %\label{table_example} %\centering %% Some packages, such as MDW tools,
-offer better commands for making tables %% than the plain LaTeX2e tabular which
-is used here. %\begin{tabular}{|c||c|} %\hline %One & Two\\ %\hline %Three &
-Four\\ %\hline %\end{tabular} %\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals use top floats exclusively.
-% However, Computer Society journals sometimes do use bottom floats - bear this
-% in mind when choosing appropriate optional arguments for the figure/table
-% environments. Note that, LaTeX2e, unlike IEEE journals, places footnotes above
-% bottom floats. This can be corrected via the \fnbelowfloat command of the
-% stfloats package.
-
-
-
-\section{Conclusion} \label{conc} Startups are able to produce cutting-edge
-software products with a wide impact  on the market, significantly contributing
-to the global economy. Software  development, especially in the early-stage, is
-at the core of the company's  daily activities. Despite their severely high
-failure-rate, the SMS \cite{SMS}  found that the quick proliferation of startups
-is not supported by an adequate  and scientific body of knowledge. %MUN: <--
-last sentence: isn't that a  %conclusion from the SMS? CG: fixed To be able to
-intervene on the software development strategy with scientific and  engineering
-approaches, the first step is to understand startups' behavior.  Hence, in this
-research work, we provided an initial explanation of the  underlying phenomenon
-by means of a grounded theory case study, focusing on  early engineering
-activities, from the idea conception to the first open beta  release of the
-product.
+\section{Conclusion} \label{conc} 
+Startups are able to produce cutting-edge software products with a wide impact  
+on the market, significantly contributing to the global economy. Software  
+development, especially in the early-stage, is at the core of the company's  
+daily activities. Despite their severely high failure-rate, the SMS \cite{SMS}  
+found that the quick proliferation of startups is not supported by an adequate  
+and scientific body of knowledge. %MUN: <-- last sentence: isn't that a  
+%conclusion from the SMS? CG: fixed 
+To be able to intervene on the software development strategy with scientific and 
+engineering approaches, the first step is to understand startups' behavior.  
+Hence, in this research work, we provided an initial explanation of the  
+underlying phenomenon by means of a grounded theory case study, focusing on  
+early engineering activities, from the idea conception to the first open beta  
+release of the product.
 
 Through an exploratory research, conducted by a systematic approach, we
 produced a theoretical model grounded into the hindsight knowledge collected
@@ -3177,18 +3394,20 @@ engineered startups. The explanatory capability and correctness of the model
 have been validated by means of systematic comparisons with the state-of-the-art
 results and empirical data. The systematic mapping study \cite{SMS},  with 37
 studies extracted, revealed a  multi-faceted state-of-the-art inadequate to
-support software development  activities in startup companies. %MUN: <-- you mix
-again SMS and GT here... fix  %it CG: not fixed, I would keep it since important
-part of the initial GT  %methodology %MUN1: Ok, I understand that. But this
-paper is about the GT, ONLY the GT. The  %SMS is published elsewhere. Maybe it
-is ok how you use the SMS now... let's  %see what Tony says... CG: ok On the
-other hand, the case study conducted in 13 early-stage startups,  provided a
-broad set of empirical evidences obtained by combining different  research
-methodologies in a grounded theory approach.
+support software development  activities in startup companies. 
+%MUN: <-- you mix again SMS and GT here... fix it CG: not fixed, I would keep 
+%it since important part of the initial GT methodology 
+%MUN1: Ok, I understand that. But this paper is about the GT, ONLY the GT. The  
+%SMS is published elsewhere. Maybe it is ok how you use the SMS now... let's  
+%see what Tony says... CG: ok 
+On the other hand, the case study conducted in 13 early-stage startups,  
+provided a broad set of empirical evidences obtained by combining different  
+research methodologies in a grounded theory approach.
 
-The overall results of our research confirm that startups possess %MUN:  %why
-unique? CG: fixed. characteristics of uncertainty, lack of resources and time-
-pressure. These  factors influence the software development to an extent that
+The overall results of our research confirm that startups possess 
+%MUN:  %why unique? CG: fixed. 
+characteristics of uncertainty, lack of resources and time-pressure. These  
+factors influence the software development to an extent that
 transforms every  decision related to the development strategies into a
 difficult trade-off for  the company. Moreover, although startups share
 different characteristics with  other similar SE domains (e.g. market-driven
@@ -3214,9 +3433,10 @@ enough to enter the market early while controlling the amount of accumulated
 technical debt.  %MUN: Not sure whether you have discussed/mentioned the meaning
 %of chaotic/complex domain in the paper, I think not. Hence you need to
 %rephrase that (but you can not introduce new concepts here in the conclusion).
-%CG: fixed.  Therefore, from a software development perspective, working with
-low-precision  engineering activities represents the only viable strategy that
-startups can  follow in the early stage of their lifecycle.
+%CG: fixed.  
+Therefore, from a software development perspective, working with low-precision  
+engineering activities represents the only viable strategy that startups can  
+follow in the early stage of their lifecycle.
 
 In this research we discussed a number of novel challenges for both
 practitioners and researchers, while presenting a first set of concepts, terms
@@ -3227,65 +3447,90 @@ SE \cite{Berry1992}, we would like to see the rise of a new discipline -
 scientific, engineering, managerial and systematic approaches with the aim of
 successfully developing software systems in startup companies}. %MUN: Nice ;-)
 
-% if have a single appendix: %\appendix[Proof of the Zonklar Equations] % or
-%\appendix  % for no appendix heading % do not use \section anymore after
-\appendix, only \section* % is possibly needed
+% if have a single appendix:
+%\appendix[Proof of the Zonklar Equations]
+% or
+%\appendix % for no appendix heading
+% do not use \section anymore after \appendix, only \section*
+% is possibly needed
 
-% use appendices with more than one appendix % then use \section to start each
-appendix % you must declare a \section before using any % \subsection or using
-\label (\appendices by itself % starts a section numbered zero.) %
+% use appendices with more than one appendix
+% then use \section to start each appendix
+% you must declare a \section before using any
+% \subsection or using \label (\appendices by itself
+% starts a section numbered zero.)
+%
 
 
-% use section* for acknowledgement \ifCLASSOPTIONcompsoc   % The Computer
-Society usually uses the plural form   \section*{Acknowledgments} \else   %
-regular IEEE prefers the singular form   \section*{Acknowledgment} \fi
+% use section* for acknowledgement
+\ifCLASSOPTIONcompsoc
+  % The Computer Society usually uses the plural form
+  \section*{Acknowledgments}
+\else
+  % regular IEEE prefers the singular form
+  \section*{Acknowledgment}
+\fi
 
 
 The authors would like to thank...
 
 
-% Can use something like this to put references on a page % by themselves when
-using endfloat and the captionsoff option. \ifCLASSOPTIONcaptionsoff   \newpage
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
 \fi
 
 
 
-% trigger a \newpage just before the given reference % number - used to balance
-the columns on the last page % adjust value as needed - may need to be
-readjusted if % the document is modified later %\IEEEtriggeratref{8} % The
-"triggered" command can be changed if desired:
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
 
 % references section
 
-% can use a bibliography generated by BibTeX as a .bbl file % BibTeX
-documentation can be easily obtained at: % http://www.ctan.org/tex-
-archive/biblio/bibtex/contrib/doc/ % The IEEEtran BibTeX style support page is
-at: % http://www.michaelshell.org/tex/ieeetran/bibtex/
-\bibliographystyle{IEEEtran} % argument is your BibTeX string definitions and
-bibliography database(s) \bibliography{tse}
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+\bibliography{tse}
 
-% if you will not have a photo at all: \begin{IEEEbiographynophoto}{John Doe}
-Biography text here. \end{IEEEbiographynophoto}
-
-% insert where needed to balance the two columns on the last page with %
-biographies %\newpage
-
-\begin{IEEEbiographynophoto}{Jane Doe} Biography text here.
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{John Doe}
+Biography text here.
 \end{IEEEbiographynophoto}
 
-% You can push biographies down or up by placing a \vfill before or after them.
-% The appropriate use of \vfill depends on what kind of text is on the last page
-% and whether or not the columns are being equalized.
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiographynophoto}{Jane Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
 
 %\vfill
 
-% Can be used to pull up biographies so that the bottom of the last one % is
-flush with the other column. %\enlargethispage{-5in}
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
 
 
 
-% that's all folks \end{document}
+% that's all folks
+\end{document}
 
 
 
