@@ -2933,7 +2933,7 @@ of early-stage startups, formally expressed in the GSM, answering to our
 research question (\textit{What is the current state-of-practice related to
 software development strategy in early-stage startups?}) through its 
 sub-questions. Although the startups we inquired in the case study were spread
-across different nations and market sectors, we have found several patterns
+across different nations and market sectors, we have found some patterns
 that emerged very clearly.
 
 %------------------------------------------------------------------------------%
@@ -2949,6 +2949,8 @@ with very complex solutions is often not a viable option. Business demands,
 investors interests, market pressures and the general uncertain conditions force
 startups to quickly iterate on the product by exploring and experimenting new
 functionalities progressively rolled-out to early-adopters. 
+
+Introducing a software development process in this early phases of high pressure can be challenging for startups. However, some development approaches, mostly investigated in mature companies, could help in shortening time-to-market. Among several methodologies that can be found in literature, the rapid application development (RAD) \cite{mcconnell2004professional} facilitates prototyping and promotes a continuous interactive process that allows early-adopters to understand, modify and approve a working product that meets their needs. A study of Gerbel et. al. states that the use of RAD, which promotes minimal planning and rapid prototyping, allows software to be released faster and makes easier to change requirements \cite{Gerber_practicalimplications}. 
 %MUN1: Ok, I'm now "inventing" possible implications in the sections below...  
 %this is your job and you are much more qualified to do that than me :-)
 
@@ -2965,10 +2967,7 @@ specific and standard development methodologies or processes. From an accurate
 and in-depth investigation into daily activities, it emerged that the number of 
 the observed development \textit{practices} is extremely small and never 
 systematic (only little \textit{pair programming} sessions and rarely 
-\textit{test driven development}). Despite the wide number of publications, 
-which discuss the adoption of lightweight methodologies, we have found that 
-especially in this first stage not only methodologies but even individual 
-practices are basically neglected.
+\textit{test driven development}). 
 
 The closest development approach undertaken by early-stage startups is the
 \textit{Lean startup methodology}. A highly evolutionary development approach,
@@ -2993,6 +2992,7 @@ Blank~\cite{Blank2005}. Instead, startups absorb and implement the high-level
 principles that outlines the customer development methodology, reflected in the 
 GSM by the theoretical category \textit{find the product/market fit quickly}.
 
+While the absence of a basic process might enable startups to focus more on the product, some studies claim that companies can take advantage from the use of some engineering activities even in the early stages \cite{989006}. For instance an experience report conducted by Taipale \cite{Taipale2010} shows how their startup took advantage from tailoring some simple XP practices to their needs. 
 %MUN1: paragraph below is candidate for removal The greatest part of engineering
 %activities of startups are focused on  the implementation while only little
 %attention is given to more conventional  activities (project management,
@@ -3010,6 +3010,8 @@ functionalities focused on user experience. These functionalities are
 usually set by the founders and their experience in a particular business 
 domain. As soon as possible they provide demos to demonstrate the idea to 
 potential customers. 
+
+To ship a product with the right features built in, startups need to prioritize and filter. From an engineering point of view, most startups do not explicitly apply traditional Requirement Engineering (RE) activities to collect and manage requirements. However, some studies have found that by integrating simple techniques, such as Persona and Scenario, companies can improve the effectiveness of the requirements elicitation even whether the final users is mostly unknown \cite{1531030}. Another study suggest that using a lightweight project-initiation framework such as the Agile Inception Deck can help in preventing premature failure of the software project due to wrong understanding of the project requirements \cite{1667597}.
 %MUN1: This rises the question, how do startups prioritize requirements.  
 %There's abundant amount of literature on how to select/prioritize reqs., but  
 %do they work in startups? Are they also too heavyweight or could they be  
@@ -3075,15 +3077,16 @@ The initial lack of structures and processes negatively affects the
 performance when the company starts to grow.
 One of the primary objectives of startups is to expand their business into fast
 growing markets. If successful, the company will face a growth in terms of
-number of customers, employees and product capabilities. Then, the increased
-complexity arises the necessity of controlling the initially chaotic software
-development environment. Under delicate circumstances, where an increased
+number of customers, employees and product capabilities. Then, the increased complexity requires the team to start controlling the initial chaotic software development environment. Under delicate circumstances, where an increased
 market demand meets a poorly engineered product and process, the development
 team need to start returning the accumulated technical debt. As reported by
 practitioners, introducing more structures, documentation and standard
 procedures, cause an initial drop-down in performance which severity depends on
 the speed of growth, the amount of technical debt and the capacity of the team
 to absorb it. 
+
+As stated by many interviewee, modern coding platforms (e.g. github\footnote{http://www.github.com}) and the use of well-known frameworks can be leveraged to mitigate the technical debt. Coding platforms allow developers to integrate in one place several engineering activities such as requirements lists, issue tracking, code repository, documentation, continuous integration, release and configuration management. Frameworks include support programs, compilers, code libraries and tool sets to enable the initial development of a project with limited overhead.
+
 %MUN1: what does literature say about technical debt? Are there strategies that 
  %maybe applicable to startups and if not why? Is there more research needed?  
 %Obviously, shortening time-to-market and preventing technical debt are two  
